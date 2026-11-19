@@ -1,5 +1,5 @@
 {
-"asof": "Nov 19, 2026 1:37 PM CST",
+"asof": "Nov 19, 2026 2:40 PM CST",
 "bouts": [
 {
 "mu": 45180,
@@ -331,7 +331,7 @@
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
 "n": 7,
-"p1": 0.4957,
+"p1": 0.5,
 "f1": {
 "name": "Alessandro Costa",
 "slug": "alessandro-costa-14121",
@@ -344,7 +344,7 @@
 "f2": {
 "name": "Amir Albazi",
 "slug": "amir-albazi-7189",
-"med": -112,
+"med": -110,
 "best": -100,
 "book": "Polymarket",
 "nb": 7,
@@ -406,7 +406,7 @@
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
 "n": 7,
-"p1": 0.313,
+"p1": 0.3158,
 "f1": {
 "name": "Alik Lorenz",
 "slug": "alik-lorenz-15278",
@@ -419,9 +419,9 @@
 "f2": {
 "name": "Diyar Nurgozhay",
 "slug": "diyar-nurgozhay-11550",
-"med": -251,
-"best": -225,
-"book": "BetWay",
+"med": -250,
+"best": -223,
+"book": "Polymarket",
 "nb": 7,
 "open": -255
 }
