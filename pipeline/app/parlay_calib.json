@@ -1,0 +1,262 @@
+{
+ "version": 1,
+ "leg": {
+  "w_model": 0.4,
+  "layoff_days": 730,
+  "pen_layoff": 0.06,
+  "pen_layoff_opp": 0.02,
+  "thin_n": 2,
+  "pen_thin": 0.04,
+  "pen_thin_opp": 0.02,
+  "gap_free": 0.15,
+  "pen_gap": 0.5,
+  "tight": 0.1
+ },
+ "k": 0.43,
+ "bands": [
+  "50-60%",
+  "60-70%",
+  "70-80%",
+  "80%+"
+ ],
+ "joined": 3040,
+ "legs_all": 2017,
+ "legs_oos": 1101,
+ "period_oos": "2022-01-01..2026-11-07",
+ "period_in": "2018-01-01..2021-12-31",
+ "in_sample": {
+  "50-60%": {
+   "n": 318,
+   "won": 171,
+   "rate": 0.538,
+   "pred": 0.557
+  },
+  "60-70%": {
+   "n": 443,
+   "won": 294,
+   "rate": 0.664,
+   "pred": 0.632
+  },
+  "70-80%": {
+   "n": 142,
+   "won": 116,
+   "rate": 0.817,
+   "pred": 0.719
+  },
+  "80%+": {
+   "n": 13,
+   "won": 11,
+   "rate": 0.846,
+   "pred": 0.822
+  }
+ },
+ "buckets": {
+  "50-60%": {
+   "n": 306,
+   "won": 180,
+   "rate": 0.588,
+   "pred": 0.556
+  },
+  "50-60%|five": {
+   "n": 36,
+   "won": 19,
+   "rate": 0.528,
+   "pred": 0.565
+  },
+  "50-60%|loose": {
+   "n": 40,
+   "won": 25,
+   "rate": 0.625,
+   "pred": 0.579
+  },
+  "50-60%|loose|clean": {
+   "n": 37,
+   "won": 22,
+   "rate": 0.595,
+   "pred": 0.583
+  },
+  "50-60%|loose|risk": {
+   "n": 3,
+   "won": 3,
+   "rate": 1.0,
+   "pred": 0.531
+  },
+  "50-60%|tight": {
+   "n": 266,
+   "won": 155,
+   "rate": 0.583,
+   "pred": 0.552
+  },
+  "50-60%|tight|clean": {
+   "n": 201,
+   "won": 115,
+   "rate": 0.572,
+   "pred": 0.561
+  },
+  "50-60%|tight|risk": {
+   "n": 65,
+   "won": 40,
+   "rate": 0.615,
+   "pred": 0.526
+  },
+  "60-70%": {
+   "n": 535,
+   "won": 371,
+   "rate": 0.693,
+   "pred": 0.633
+  },
+  "60-70%|five": {
+   "n": 72,
+   "won": 45,
+   "rate": 0.625,
+   "pred": 0.638
+  },
+  "60-70%|loose": {
+   "n": 274,
+   "won": 205,
+   "rate": 0.748,
+   "pred": 0.63
+  },
+  "60-70%|loose|clean": {
+   "n": 221,
+   "won": 166,
+   "rate": 0.751,
+   "pred": 0.639
+  },
+  "60-70%|loose|risk": {
+   "n": 53,
+   "won": 39,
+   "rate": 0.736,
+   "pred": 0.595
+  },
+  "60-70%|tight": {
+   "n": 261,
+   "won": 166,
+   "rate": 0.636,
+   "pred": 0.635
+  },
+  "60-70%|tight|clean": {
+   "n": 213,
+   "won": 137,
+   "rate": 0.643,
+   "pred": 0.641
+  },
+  "60-70%|tight|risk": {
+   "n": 48,
+   "won": 29,
+   "rate": 0.604,
+   "pred": 0.611
+  },
+  "70-80%": {
+   "n": 232,
+   "won": 201,
+   "rate": 0.866,
+   "pred": 0.713
+  },
+  "70-80%|five": {
+   "n": 27,
+   "won": 21,
+   "rate": 0.778,
+   "pred": 0.717
+  },
+  "70-80%|loose": {
+   "n": 162,
+   "won": 142,
+   "rate": 0.877,
+   "pred": 0.705
+  },
+  "70-80%|loose|clean": {
+   "n": 124,
+   "won": 106,
+   "rate": 0.855,
+   "pred": 0.713
+  },
+  "70-80%|loose|risk": {
+   "n": 38,
+   "won": 36,
+   "rate": 0.947,
+   "pred": 0.681
+  },
+  "70-80%|tight": {
+   "n": 70,
+   "won": 59,
+   "rate": 0.843,
+   "pred": 0.731
+  },
+  "70-80%|tight|clean": {
+   "n": 54,
+   "won": 47,
+   "rate": 0.87,
+   "pred": 0.736
+  },
+  "70-80%|tight|risk": {
+   "n": 16,
+   "won": 12,
+   "rate": 0.75,
+   "pred": 0.712
+  },
+  "80%+": {
+   "n": 28,
+   "won": 26,
+   "rate": 0.929,
+   "pred": 0.806
+  },
+  "80%+|five": {
+   "n": 1,
+   "won": 1,
+   "rate": 1.0,
+   "pred": 0.815
+  },
+  "80%+|loose": {
+   "n": 16,
+   "won": 15,
+   "rate": 0.938,
+   "pred": 0.794
+  },
+  "80%+|loose|clean": {
+   "n": 11,
+   "won": 11,
+   "rate": 1.0,
+   "pred": 0.815
+  },
+  "80%+|loose|risk": {
+   "n": 5,
+   "won": 4,
+   "rate": 0.8,
+   "pred": 0.748
+  },
+  "80%+|tight": {
+   "n": 12,
+   "won": 11,
+   "rate": 0.917,
+   "pred": 0.821
+  },
+  "80%+|tight|clean": {
+   "n": 11,
+   "won": 10,
+   "rate": 0.909,
+   "pred": 0.824
+  },
+  "80%+|tight|risk": {
+   "n": 1,
+   "won": 1,
+   "rate": 1.0,
+   "pred": 0.785
+  }
+ },
+ "parlays": {
+  "3": {
+   "cards": 180,
+   "hit": 79,
+   "rate": 0.439,
+   "pred": 0.31
+  },
+  "4": {
+   "cards": 157,
+   "hit": 49,
+   "rate": 0.312,
+   "pred": 0.195
+  }
+ },
+ "note": "Win rates of legs passing the app rule (stats estimate and vig-free closing market agree) on UFC fights since 2022. Historical rates, not guarantees; correlation between legs ignored."
+}

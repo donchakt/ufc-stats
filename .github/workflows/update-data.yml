@@ -3,6 +3,7 @@ name: Update data
 # Keeps https://donchakt.github.io/ufc-stats/ current without anyone touching it.
 #   full = UFCStats fight data + UFC.com events/results/rankings/athletes + news + odds -> rebuild -> publish
 #   odds = BestFightOdds lines only (rebuild + publish only when a line moved)
+# The bot's push triggers the normal GitHub Pages build (pages-build-deployment).
 # Every run also runs a health check and keeps one GitHub issue (label: data-health) listing anything that needs a fix.
 # Cron times are UTC (Saskatoon = UTC-6). GitHub may start scheduled runs late (often 5-30 min) at busy times.
 on:
@@ -23,7 +24,6 @@ on:
 permissions:
   contents: write   # commit the refreshed index.html / data.json
   issues: write     # open / update / close the data-health issue
-  pages: write      # ask GitHub Pages to rebuild after a bot commit
 
 concurrency:
   group: update-data
@@ -80,12 +80,6 @@ jobs:
           git commit -m "Data update ($(date '+%b %-d, %Y %-I:%M %p') CST, ${{ steps.mode.outputs.mode }})"
           for i in 1 2 3; do git pull --rebase --quiet && git push && break; sleep 5; done
           echo "pushed=1" >> "$GITHUB_OUTPUT"
-
-      - name: Rebuild GitHub Pages
-        if: steps.push.outputs.pushed == '1'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || echo "::warning::Could not request a Pages build (it usually starts on its own after the push)"
 
       - name: Health check
         if: always()

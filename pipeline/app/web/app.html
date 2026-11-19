@@ -283,6 +283,19 @@ details.cat .body{padding:0 0 8px;animation:vin .3s ease both}
 .disc{margin-top:18px;padding:14px;border-radius:16px;background:#ffffff06;border:1px solid var(--ln);color:var(--mu2);font-size:11.5px;line-height:1.55}
 @media(min-width:760px){.fo{height:320px}.tot .fo{height:360px}.hero .tt{font-size:38px}.ph-hero,.ph-hero .inf{min-height:400px}.ph-hero .big{font-size:56px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+.pcta{display:flex;align-items:center;justify-content:space-between;width:100%;margin:0 0 12px;padding:12px 16px;border-radius:16px;text-align:left;color:#111;background:linear-gradient(180deg,var(--gold2),#d9952a);box-shadow:0 6px 20px #f2b23a33}
+.pcta b{display:block;font-family:var(--disp);font-size:16px;letter-spacing:.08em;text-transform:uppercase}.pcta small{font-size:11.5px;font-weight:600;opacity:.75}.pcta>span:last-child{font-size:22px;font-weight:800}
+.pleg{border-top:1px solid var(--ln)}.pleg:first-child{border-top:0}.pleg>summary{list-style:none;display:flex;align-items:center;gap:10px;padding:11px 14px;cursor:pointer}.pleg>summary::-webkit-details-marker{display:none}
+.pleg .tx{flex:1;min-width:0}.pleg .n{font-weight:700;font-size:14.5px}.pleg .sub{font-size:11.5px;color:var(--mu2)}.pleg .ph2{font-size:11px;color:var(--mu);margin-top:2px}.pleg .ph2 b{color:var(--win)}
+.pp{text-align:right;font-family:var(--disp);font-variant-numeric:tabular-nums}.pp b{display:block;font-size:20px;color:var(--gold2)}.pp small{font-size:12px;color:var(--mu2)}
+.pflag{display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:1px 6px;border-radius:6px;background:#ff5a6222;color:#ff8a8f}
+.pwhy{padding:0 16px 12px 66px;font-size:12px;line-height:1.55;color:var(--mu)}.pwhy .pstat{color:var(--mu2);margin-top:3px}
+.psum{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:12px 14px;border-top:1px solid var(--ln);background:#ffffff05}.psum div{text-align:center}.psum small{display:block;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mu2)}.psum b{font-family:var(--disp);font-size:22px;color:#fff}
+.pnote{font-size:11px;color:var(--mu2);padding:0 16px 12px;line-height:1.5}
+.pkrow{padding:9px 14px;border-top:1px solid var(--ln)}.pkrow .wc{font-size:10.5px;color:var(--mu2);font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}.pkb{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.pk{padding:8px 10px;border-radius:12px;text-align:left;background:#ffffff08;border:1px solid var(--ln2);transition:all .15s}.pk span{display:block;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.pk small{font-size:11px;color:var(--mu2)}
+.pk.red{border-left:3px solid var(--red)}.pk.blue{border-left:3px solid var(--blue)}.pk.red.on{background:#e21d2b33;border-color:var(--red2)}.pk.blue.on{background:#2f7bff33;border-color:var(--blue2)}
+.pmine{border-top:2px solid var(--gold);margin-top:4px}.pmine .h3{display:flex;justify-content:space-between;align-items:center;padding:12px 14px 6px;font-family:var(--disp);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold2)}.pclr{font-size:11px;color:var(--mu);padding:4px 10px;border:1px solid var(--ln2);border-radius:999px}
 </style></head><body>
 <header class="top"><button class="back" id="back" hidden aria-label="Back"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
 <div class="brand" id="ttl"></div><div class="asof" id="asof"></div></header>
@@ -520,7 +533,7 @@ function event(ci){const c=D.cards[ci];const t={'Main card':c[3],'Prelims':c[4],
  c[6].forEach((b,i)=>{const s=b[0]||'Announced bouts';if(s!=last){h+=`<div class="sec"><span>${esc(s)}</span><span>${t[s]?esc(t[s])+' CST':''}</span></div>`;last=s}const p=bestP(b);
   h+=`<button type="button" class="bout${i==0?' main':''}" data-b="${i}"><div class="wc">${i==0?'Main event · ':''}${esc(b[1])}</div><div class="brow">${fcell(b[2],b[4],0,'red')}<div class="vsm">VS</div>${fcell(b[3],b[5],1,'blue')}</div>${dbar(b)}</button>`});
  if(!c[6].length)h='<div class="empty">Bouts not announced yet.</div>';
- return `<div class="view"><div class="evh"><div class="kick">${esc(c[1])}</div><div class="tt">${esc(c[0])}</div><div class="sub" style="color:#ffffffb3;margin-top:4px">${esc(c[2])}</div></div><div class="card">${h}</div><div class="foot">Numbers = decimal market odds (median line across books on BestFightOdds); the red/blue bar = the market's no-vig win chance. Tap a fight for the stats estimate, full odds and tale of the tape. Odds as of ${OAS()}.</div></div>`}
+ return `<div class="view"><div class="evh"><div class="kick">${esc(c[1])}</div><div class="tt">${esc(c[0])}</div><div class="sub" style="color:#ffffffb3;margin-top:4px">${esc(c[2])}</div></div>${c[6].length>=3?`<button type="button" class="pcta" data-pl="${ci}"><span><b>Parlay builder</b><small>Most likely 3 &amp; 4-leg combos · build your own</small></span><span>›</span></button>`:''}<div class="card">${h}</div><div class="foot">Numbers = decimal market odds (median line across books on BestFightOdds); the red/blue bar = the market's no-vig win chance. Tap a fight for the stats estimate, full odds and tale of the tape. Odds as of ${OAS()}.</div></div>`}
 function ringsRow(A,B){const m=f=>f?`<div class="meta">${f.rt?`Results ${f.rt[10].toFixed(1)} · Skill ${f.rt[11].toFixed(1)}`:'Not rated'}</div>`:'';
  return `<div class="rings"><div style="display:flex;gap:10px;align-items:center">${RR(A,76,'/10')}${m(A)}</div><div style="display:flex;gap:10px;align-items:center;flex-direction:row-reverse;text-align:right">${RR(B,76,'/10')}${m(B)}</div></div>`}
 function fnav(ci,bi,pos){const bs=D.cards[ci][6],n=bs.length,nm=x=>esc(nameOf(x).split(' ').slice(-1)[0]),lab=j=>bs[j]?`${nm(bs[j][2])} vs ${nm(bs[j][3])}`:'Start of card';
@@ -529,6 +542,63 @@ function matchup(ci,bi){const b=D.cards[ci][6][bi];const A=typeof b[2]=='number'
  let h=`<div class="view">${fnav(ci,bi,'t')}<div class="tot"><div class="wc">${bi==0?'Main event · ':''}${esc(b[1])}</div>${faceoff(b[2],b[3],b[4],b[5],0,bi==0?5:3)}${ringsRow(A,B)}</div><div class="card">${probs(b)}</div>`;
  if(A&&B)h+=`<div class="h2">Tale of the tape</div>${tape(A,B)}`;
  return h+`<div class="foot">Stats estimate = logistic on the gap in the overall ratings shown (higher overall is always the favourite; bigger gap = bigger edge), fit on ${D.fit.n} UFC fights since 2018 using each fighter's overall rating from before the fight; it called ${Math.round(D.fit.accuracy*100)}% of winners (the betting favourite wins about 72%), so treat it as rough. Betting market = median moneyline across books on BestFightOdds shown as decimal odds with the American line underneath; no-vig win % on the bar; ▲/▼ vs the opening line, odds as of ${OAS()||esc(D.asof)}. Not betting advice. Previous / Next fight follow the card order on the fight list (main event first); the back arrow always returns to the fight list.</div>${fnav(ci,bi,'b')}</div>`}
+/* parlay builder: legs scored from the stats estimate + no-vig market (both must agree), risk penalties, style tie-break,
+   historical win rates of similar legs (parlay_calib.py, UFC fights since 2022). Recomputed from each data refresh. */
+let PSEL={};
+const PL=()=>(D.pc&&D.pc.leg)||{w_model:.4,layoff_days:730,pen_layoff:.06,pen_layoff_opp:.02,thin_n:2,pen_thin:.04,pen_thin_opp:.02,gap_free:.15,pen_gap:.5,tight:.1};
+const PBANDS=[[.5,.6,'50-60%'],[.6,.7,'60-70%'],[.7,.8,'70-80%'],[.8,1.01,'80%+']];
+const pband=p=>(PBANDS.find(([lo,hi])=>p>=lo&&p<hi)||PBANDS[0])[2];
+const clip=(x,a,b)=>Math.max(a,Math.min(b,x));
+function phist(L){if(!D.pc)return null;const b=pband(L.bl);for(const k of [b+'|'+L.ag+'|'+(L.risk?'risk':'clean'),b+'|'+L.ag,b]){const x=D.pc.b[k];if(x&&x[0]>=40)return {k,n:x[0],w:x[1],r:x[1]/x[0]}}return null}
+function pleg(ci,bi,s,any){const c=D.cards[ci],b=c[6][bi];if(!b||typeof b[2]!='number'||typeof b[3]!='number')return null;
+ const me=F[s?b[3]:b[2]],op=F[s?b[2]:b[3]],o=b[11];const P=PL();
+ const pS=b[6]!=null?(s?100-b[6]:b[6])/100:null;const mk=o&&o[9]!=null?o[9]:b[7];const pM=mk!=null?(s?100-mk:mk)/100:null;
+ if(pS==null&&pM==null)return null;const agree=pS!=null&&pM!=null&&pS>.5&&pM>.5;if(!any&&!agree)return null;
+ const bl=pS!=null&&pM!=null?P.w_model*pS+(1-P.w_model)*pM:(pS!=null?pS:pM);const gap=pS!=null&&pM!=null?Math.abs(pS-pM):0;
+ const ev=new Date(c[7]+'T12:00:00');const lay=f=>f.fights&&f.fights[0]?Math.round((ev-new Date(f.fights[0].d+'T12:00:00'))/864e5):null;
+ const lm=lay(me),lo=lay(op);let pen=0;const fl=[],why=[];
+ if(lm!=null&&lm>=P.layoff_days){pen+=P.pen_layoff;fl.push('Layoff');why.push(`${esc(me.name)} has been out ${(lm/365).toFixed(1)} years (−${Math.round(P.pen_layoff*100)} pts)`)}
+ if(lo!=null&&lo>=P.layoff_days){pen+=P.pen_layoff_opp;fl.push('Opp. layoff');why.push(`Opponent out ${(lo/365).toFixed(1)} years: less certain read (−${Math.round(P.pen_layoff_opp*100)} pts)`)}
+ if((me.ufc||0)<P.thin_n){pen+=P.pen_thin;fl.push(me.ufc?'Thin sample':'Debut');why.push(`${esc(me.name)} has ${me.ufc||0} UFC fight${me.ufc==1?'':'s'} (−${Math.round(P.pen_thin*100)} pts)`)}
+ if((op.ufc||0)<P.thin_n){pen+=P.pen_thin_opp;fl.push('Opp. thin');why.push(`Opponent has ${op.ufc||0} UFC fight${op.ufc==1?'':'s'}: little data (−${Math.round(P.pen_thin_opp*100)} pts)`)}
+ if(gap>P.gap_free){pen+=(gap-P.gap_free)*P.pen_gap;fl.push('Big split');why.push(`Stats and market are ${Math.round(gap*100)} pts apart (−${Math.round((gap-P.gap_free)*P.pen_gap*100)} pts)`)}
+ if(!agree&&pS!=null&&pM!=null)fl.push('Disagree');
+ const a=me.st,z=op.st;let sty=0;const sx=[];
+ if(a&&z){const sd=(a[0]-a[2])-(z[0]-z[2]);sty+=clip(sd/3,-1,1)*.4;if(Math.abs(sd)>=.8)sx.push(sd>0?`Striking differential edge: ${(a[0]-a[2]).toFixed(1)} vs ${(z[0]-z[2]).toFixed(1)} per min`:`Opponent has the better striking differential (${(z[0]-z[2]).toFixed(1)} vs ${(a[0]-a[2]).toFixed(1)})`);
+  if(a[4]!=null&&z[6]!=null&&z[4]!=null&&a[6]!=null){const te=a[4]*(1-z[6]/100)-z[4]*(1-a[6]/100);sty+=clip(te/1.5,-1,1)*.3;if(Math.abs(te)>=.5)sx.push(te>0?`Takedown edge: ${a[4]} TD/15 min vs ${z[6]}% opponent TDD`:`Opponent's wrestling is a threat: ${z[4]} TD/15 vs ${a[6]}% TDD`)}}
+ const w3=f=>(f.fights||[]).slice(0,3).filter(x=>x.r=='W').length;const fe=w3(me)-w3(op);sty+=fe/3*.3;
+ if(me.fights&&me.fights.length>=3&&w3(me)==3)sx.push(`Won last 3`);else if(me.fights&&me.fights[0]&&me.fights[0].r=='L')sx.push('Coming off a loss');
+ const adj=clip(bl-pen,.01,.99);const L={ci,bi,s,f:s?b[3]:b[2],op:s?b[2]:b[3],pS,pM,bl,adj,gap,agree,ag:gap<P.tight?'tight':'loose',risk:fl.some(x=>/ayoff|hin|Debut/.test(x)),fl,why,sx,sty,five:bi==0,
+  dec:o?(+DEC(o[s?1:0])):null};
+ L.h=phist(L);L.score=L.h?(L.h.w+20*L.adj)/(L.h.n+20):L.adj;return L}
+function pcombo(L){const p=L.reduce((m,x)=>m*x.adj,1),h=L.every(x=>x.h)?L.reduce((m,x)=>m*x.h.r,1):null,d=L.every(x=>x.dec)?L.reduce((m,x)=>m*x.dec,1):null;return {p,h,d}}
+const pct=x=>Math.round(x*100)+'%';
+function plegRow(L,open){const me=F[L.f],op=F[L.op];
+ const src=[L.pS!=null?`Stats ${pct(L.pS)}`:'No stats estimate',L.pM!=null?`Market ${pct(L.pM)}`:'No odds'].join(' · ');
+ const hl=L.h?`Picks like this won <b>${pct(L.h.r)}</b> (n=${L.h.n}) since 2022`:'No historical bucket';
+ const five=L.five&&D.pc&&D.pc.b[pband(L.bl)+'|five'];
+ return `<details class="pleg"${open?' open':''}><summary>${photo(me,'av')}<div class="tx"><div class="n">${esc(me.name)}</div><div class="sub">def. ${esc(op.name)}${L.fl.length?' · '+L.fl.map(x=>`<span class="pflag">${x}</span>`).join(' '):''}</div><div class="ph2">${hl}</div></div><div class="pp"><b>${pct(L.adj)}</b><small>${L.dec?L.dec.toFixed(2):'–'}</small></div></summary>
+ <div class="pwhy"><div>${src} → blended ${pct(L.bl)}${L.adj<L.bl-.0005?` → ${pct(L.adj)} after risk penalties`:''}.${L.agree?' Both favour '+esc(me.name)+'.':' <b style="color:var(--loss)">Stats and market do not agree on this one.</b>'}</div>
+ ${L.why.map(x=>`<div>• ${x}</div>`).join('')}${L.sx.map(x=>`<div>• ${x}</div>`).join('')}
+ ${L.h?`<div class="pstat">Historical: legs in the ${esc(L.h.k.split('|')[0])} band${L.h.k.includes('|')?' with '+(L.h.k.split('|')[1]=='tight'?'stats & market within 10 pts':'stats & market 10+ pts apart')+(L.h.k.split('|')[2]?', '+(L.h.k.split('|')[2]=='risk'?'with layoff/thin-sample flags':'no risk flags'):''):''} won ${L.h.w}/${L.h.n} (${pct(L.h.r)}) since 2022.</div>`:''}
+ ${five&&five[0]>=20?`<div class="pstat">5-round fights in this band: ${five[1]}/${five[0]} (${pct(five[1]/five[0])}).</div>`:''}
+ <div class="pstat">Decimal odds ${L.dec?L.dec.toFixed(2):'n/a'} (median line, BestFightOdds).</div></div></details>`}
+function psum(L,k){const c=pcombo(L);const hp=D.pc&&D.pc.par&&D.pc.par[String(k)];
+ return `<div class="psum"><div><small>Est. hit chance</small><b>${pct(c.p)}</b></div><div><small>Historical leg rates</small><b>${c.h!=null?pct(c.h):'–'}</b></div><div><small>Market odds</small><b>${c.d?c.d.toFixed(2):'–'}</b></div></div>
+ ${hp&&L.length==k?`<div class="pnote">Same rule, top ${k} legs per card, replayed on ${hp.cards} UFC cards since 2022: all ${k} won on ${hp.hit} (${pct(hp.rate)}). Historical rate, not a guarantee.</div>`:''}`}
+function parlay(ci){const c=D.cards[ci];const legs=[];c[6].forEach((b,bi)=>{for(const s of [0,1]){const L=pleg(ci,bi,s);if(L)legs.push(L)}});
+ legs.sort((x,y)=>y.score-x.score||y.adj-x.adj||y.sty-x.sty);
+ let h=`<div class="view"><div class="evh"><div class="kick">Parlay builder · ${esc(c[1])}</div><div class="tt">${esc(c[0])}</div><div class="sub" style="color:#ffffffb3;margin-top:4px">Legs where our stats estimate and the betting market pick the same winner, ranked by how often similar picks won since 2022.</div></div>`;
+ for(const k of [3,4]){h+=`<div class="h2">Most likely ${k}-leg</div>`;
+  if(legs.length<k){h+=`<div class="card"><div class="empty">Only ${legs.length} fight${legs.length==1?'':'s'} where stats and market agree${c[6].some(b=>!b[11])?' (some fights have no odds yet)':''}. Need ${k}.</div></div>`;continue}
+  const top=legs.slice(0,k);h+=`<div class="card pcard">${top.map(L=>plegRow(L)).join('')}${psum(top,k)}</div>`}
+ const sel=PSEL[ci]||{};const mine=Object.entries(sel).map(([bi,s])=>pleg(ci,+bi,s,1)).filter(Boolean);
+ h+=`<div class="h2">Build your own</div><div class="card pcard"><div class="pnote" style="padding:12px 16px 4px">Tap a fighter to add or remove a leg. % = blended estimate for that pick.</div>`;
+ c[6].forEach((b,bi)=>{if(typeof b[2]!='number'||typeof b[3]!='number')return;const btn=s=>{const L=pleg(ci,bi,s,1);const on=sel[bi]===s;return `<button type="button" class="pk ${s?'blue':'red'}${on?' on':''}" data-pk="${bi},${s}"><span>${esc(F[s?b[3]:b[2]].name)}</span><small>${L?pct(L.adj)+(L.agree?'':' · split'):'–'}${L&&L.dec?' · '+L.dec.toFixed(2):''}</small></button>`};
+  h+=`<div class="pkrow"><div class="wc">${bi==0?'Main event · ':''}${esc(b[1])}</div><div class="pkb">${btn(0)}${btn(1)}</div></div>`});
+ if(mine.length){h+=`<div class="pmine"><div class="h3">Your parlay · ${mine.length} leg${mine.length==1?'':'s'}<button type="button" class="pclr" data-pclr="${ci}">Clear</button></div>${mine.map(L=>plegRow(L)).join('')}${psum(mine,0)}</div>`}
+ h+=`</div><div class="foot"><b style="color:var(--gold2)">For fun/info, not betting advice; model doesn't beat the market in backtests.</b> Leg % = ${Math.round(PL().w_model*100)}% stats estimate + ${100-Math.round(PL().w_model*100)}% no-vig market, minus penalties for 2+ year layoffs, fighters with under 2 UFC fights and big stats/market splits. Combined chance = legs multiplied together (assumes fights are independent; correlation ignored). Historical rates come from ${D.pc?D.pc.n:'–'} qualifying legs on UFC fights ${D.pc?esc(D.pc.per):''} using pre-fight ratings and public closing odds; they describe the past, not a promise. Odds as of ${OAS()}.</div></div>`;
+ return h}
 /* profile */
 function accRow(key,head,title,line,body){return `<details class="cat" data-sec="${key}"><summary>${head}<div class="tx"><div class="ct">${title}</div><div class="ln">${line}</div></div><svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m6 9 6 6 6-6"/></svg></summary><div class="body">${body}</div></details>`}
 const disc=(t,l)=>`<div class="ring" style="width:52px;height:52px;border-radius:50%;background:#ffffff0c;box-shadow:inset 0 0 0 4px #ffffff14"><div class="v"><b style="font-size:15px">${t}</b><small>${l}</small></div></div>`;
@@ -553,7 +623,7 @@ function rankings(){let h='<div class="view"><div class="tiles">';const tile=(r,
  return h+'</div><div class="foot" style="margin-top:12px">Official UFC.com rankings. Chips = our overall rating out of 10 (gold 8.5+, green 7.5+).</div>'+footNote()+'</div>'}
 /* news */
 const catc=c=>/injur|withdraw/i.test(c)?'#ff5a62':/booked|schedule/i.test(c)?'#2fd27f':/title/i.test(c)?'#f2a03a':/callout|target/i.test(c)?'#b98cff':/roster|weigh/i.test(c)?'#6aa2ff':'#a7a7b4';
-function news(){return '<div class="view">'+D.news.map((n,j)=>`<div class="nw" style="--cc:${catc(n[2])};animation-delay:${Math.min(j,8)*40}ms"><div class="mt"><span class="cat2">${esc(n[2])}</span><span>${esc(n[0])}</span><span>· ${esc(n[3])}</span></div><div class="h">${esc(n[1])}</div><div class="fl">${n[4].map(x=>typeof x=='number'?`<button type="button" class="fchip" data-f="${x}">${photo(F[x],'av')}${esc(F[x].name)} ${CH(F[x])}</button>`:`<span class="fchip x">${esc(x)}</span>`).join('')}<a href="${n[5]}" target="_blank" rel="noopener">${esc(n[6])} ↗</a></div></div>`).join('')+'<div class="foot">Recent items from UFC.com, ESPN, MMA Fighting, Sherdog and Bloody Elbow. "Reported" and "Rumoured" items are not official.</div>'+footNote()+'</div>'}
+function news(){return '<div class="view">'+D.news.map((n,j)=>`<div class="nw" style="--cc:${catc(n[2])};animation-delay:${Math.min(j,8)*40}ms"><div class="mt"><span class="cat2">${esc(n[2])}</span><span>${esc(n[0])}</span><span>· ${esc(n[3])}</span></div><div class="h">${esc(n[1])}</div><div class="fl">${n[4].map(x=>typeof x=='number'?`<button type="button" class="fchip" data-f="${x}">${photo(F[x],'av')}${esc(F[x].name)} ${CH(F[x])}</button>`:`<span class="fchip x">${esc(x)}</span>`).join('')}<a href="${n[5]}" target="_blank" rel="noopener">${esc(n[6])} ↗</a></div></div>`).join('')+'<div class="foot">Recent headlines from UFC.com, MMA Fighting, MMA Mania, Sherdog and Bloody Elbow that name fighters in the app (refreshed daily). "Reported" and "Rumoured" items are not official.</div>'+footNote()+'</div>'}
 /* search & compare */
 let q='',ca=null,cb=null,qa='',qb='';
 const li=(i,attr)=>`<button type="button" class="li" ${attr}="${i}">${photo(F[i],'av')}<div class="tx"><div class="n">${esc(F[i].name)}</div><div class="sub">${esc([F[i].div,F[i].rec,F[i].rank].filter(Boolean).join(' · '))}</div></div>${CH(F[i])}</button>`;
@@ -567,7 +637,7 @@ function compare(){const pick=(s,qv,sel)=>`<div class="pick ${s}"><input class="
   h+=A.rt&&B.rt?`<div class="card"><div class="probc">${probRow('Stats estimate','s2',prob(A.rt[0],B.rt[0]),(bk_?'booked fight':'if they fought')+' · from overall rating')}${mb_}</div></div>`:'<div class="card"><div class="note" style="padding:14px">No stats estimate: a fighter is unrated (no UFC data).</div></div>';
   h+=`<div class="h2">Tale of the tape</div>${tape(A,B)}<div class="foot">The stats estimate accounts for opponent quality (Elo) but ignores weight class and ranking.</div>`}
  else h+=`<div class="tot" style="padding:40px 20px;text-align:center"><div class="vsb" style="margin:0 auto 14px;animation:none">VS</div><div class="disp" style="font-size:22px;font-weight:700">Build your own matchup</div><div class="sub" style="margin-top:6px">Pick a red corner and a blue corner above.</div></div>`;return h+'</div>'}
-function footNote(){return `<div class="disc"><b style="color:var(--mu)">Unofficial fan stats app.</b> Not affiliated with, endorsed by or connected to the UFC. Fighter photos load from public UFC.com athlete pages and belong to their owners. Data updated ${esc(D.asof)} (refreshes automatically every few hours). Sources: UFC.com (events, rankings, athlete pages), UFCStats.com fight data, BestFightOdds (market odds), ESPN, MMA Fighting, Sherdog, Bloody Elbow (news).</div>`}
+function footNote(){return `<div class="disc"><b style="color:var(--mu)">Unofficial fan stats app.</b> Not affiliated with, endorsed by or connected to the UFC. Fighter photos load from public UFC.com athlete pages and belong to their owners. Data updated ${esc(D.asof)} (refreshes automatically every few hours). Sources: UFC.com (events, rankings, athlete pages), UFCStats.com fight data, BestFightOdds (market odds), UFC.com, MMA Fighting, MMA Mania, Sherdog, Bloody Elbow (news).</div>`}
 /* shell */
 const ICON={events:'<rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17"/><path d="m10 14 1.5 1.5L14.5 13" stroke-width="2"/>',rankings:'<path d="M7 4h10v4a5 5 0 0 1-10 0z"/><path d="M7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4M12 13v4M8 21h8M9 17h6"/>',news:'<path d="M5 4h11v16H6a2 2 0 0 1-2-2V5a1 1 0 0 1 1-1z"/><path d="M16 8h3a1 1 0 0 1 1 1v9a2 2 0 0 1-4 0M8 8h5M8 12h5M8 16h3"/>',search:'<circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/>',compare:'<circle cx="7" cy="8" r="3"/><circle cx="17" cy="8" r="3"/><path d="M2.5 20a4.5 4.5 0 0 1 9 0M12.5 20a4.5 4.5 0 0 1 9 0"/>'};
 const TABS=[['events','Events'],['rankings','Rankings'],['news','News'],['search','Search'],['compare','Compare']];
@@ -577,16 +647,16 @@ $('#asof').innerHTML='Data updated<br>'+esc(D.asof);
 /* navigation: one history entry per level. Route = tab + full stack, e.g. #/events/event/0/fight/0-3/fighter/12
    Back (in-app button, browser/iOS swipe) = history.back() = up exactly one level. */
 const TABK=TABS.map(t=>t[0]);
-function routeOf(t,st){let h='#/'+t;for(const v of st)h+=v[0]=='e'?'/event/'+v[1]:v[0]=='m'?'/fight/'+v[1]+'-'+v[2]:'/fighter/'+v[1];const qs=[];
+function routeOf(t,st){let h='#/'+t;for(const v of st)h+=v[0]=='e'?'/event/'+v[1]:v[0]=='m'?'/fight/'+v[1]+'-'+v[2]:v[0]=='p'?'/parlay/'+v[1]:'/fighter/'+v[1];const qs=[];
  if(!st.length){if(t=='rankings'&&openDiv>=0)qs.push('div='+openDiv);if(t=='search'&&q)qs.push('q='+encodeURIComponent(q));if(t=='compare'){if(ca!=null)qs.push('a='+ca);if(cb!=null)qs.push('b='+cb)}}
  return h+(qs.length?'?'+qs.join('&'):'')}
-function okV(v){return v[0]=='e'?!!D.cards[v[1]]:v[0]=='m'?!!(D.cards[v[1]]&&D.cards[v[1]][6][v[2]]):v[0]=='f'?!!F[v[1]]:false}
+function okV(v){return v[0]=='e'?!!D.cards[v[1]]:v[0]=='m'?!!(D.cards[v[1]]&&D.cards[v[1]][6][v[2]]):v[0]=='f'?!!F[v[1]]:v[0]=='p'?!!D.cards[v[1]]:false}
 function parseRoute(hs){hs=hs||'';const out={tab:'events',stack:[]};const [path,qy]=hs.replace(/^#/,'').split('?');const P=new URLSearchParams(qy||'');
  if(/^(tab|v)=/.test(path)){const L=new URLSearchParams(hs.slice(1));out.tab=L.get('tab')||'events';if(L.get('div'))out.div=+L.get('div');if(L.get('q'))out.q=L.get('q');if(L.get('ca'))out.a=+L.get('ca');if(L.get('cb'))out.b=+L.get('cb');
   const v=L.get('v');if(v){const x=v.split(',');if(x[0]=='e')out.stack=[['e',+x[1]]];else if(x[0]=='m')out.stack=[['e',+x[1]],['m',+x[1],+x[2]]];else if(x[0]=='f')out.stack=[['f',+x[1]]]}}
  else{const seg=path.split('/').filter(Boolean);if(TABK.includes(seg[0]))out.tab=seg.shift();
   for(let i=0;i<seg.length;i+=2){const k=seg[i],id=seg[i+1];if(id==null)break;
-   if(k=='event')out.stack.push(['e',+id]);else if(k=='fight'){const [c,b]=id.split('-').map(Number);if(!out.stack.some(v=>v[0]=='e'&&v[1]==c))out.stack.push(['e',c]);out.stack.push(['m',c,b])}else if(k=='fighter')out.stack.push(['f',+id])}
+   if(k=='event')out.stack.push(['e',+id]);else if(k=='fight'){const [c,b]=id.split('-').map(Number);if(!out.stack.some(v=>v[0]=='e'&&v[1]==c))out.stack.push(['e',c]);out.stack.push(['m',c,b])}else if(k=='parlay'){if(!out.stack.some(v=>v[0]=='e'&&v[1]==+id))out.stack.push(['e',+id]);out.stack.push(['p',+id])}else if(k=='fighter')out.stack.push(['f',+id])}
   if(P.get('div'))out.div=+P.get('div');if(P.get('q'))out.q=P.get('q');if(P.get('a'))out.a=+P.get('a');if(P.get('b'))out.b=+P.get('b')}
  out.stack=out.stack.filter(okV);if(!TABK.includes(out.tab))out.tab='events';return out}
 const snap=()=>({tab,stack,openDiv,q,ca,cb,y:scrollY});
@@ -600,10 +670,13 @@ function tabs(){$('#tabs').innerHTML=TABS.map(([k,l])=>`<button type="button" da
  $$('#tabs button').forEach(b=>b.onclick=()=>{const t=b.dataset.t;if(t==tab){if(stack.length)history.go(-stack.length);else scrollTo({top:0,behavior:'smooth'})}else go([],t)})}
 $('#back').onclick=()=>history.back();
 function render(){tabs();const top=stack[stack.length-1];$('#back').hidden=!stack.length;const up=stack[stack.length-2];$('#back').setAttribute('aria-label','Back to '+(!up?{events:'events',rankings:'rankings',news:'news',search:'search',compare:'compare'}[tab]:up[0]=='e'?'fight list':up[0]=='m'?'matchup':'fighter'));let h,t=MARK+'FIGHT<b>STATS</b>';
- if(top&&top[0]=='f'){h=profile(top[1]);t=esc(F[top[1]].name)}else if(top&&top[0]=='e'){h=event(top[1]);t=esc(D.cards[top[1]][0])}else if(top&&top[0]=='m'){h=matchup(top[1],top[2]);t='Tale of the tape'}
+ if(top&&top[0]=='f'){h=profile(top[1]);t=esc(F[top[1]].name)}else if(top&&top[0]=='e'){h=event(top[1]);t=esc(D.cards[top[1]][0])}else if(top&&top[0]=='m'){h=matchup(top[1],top[2]);t='Tale of the tape'}else if(top&&top[0]=='p'){h=parlay(top[1]);t='Parlay builder'}
  else h={events,rankings,news,search,compare}[tab]();$('#ttl').innerHTML=t;$('#main').innerHTML=h;wire();tick()}
 function wire(){wireThrow();$$('[data-f]').forEach(e=>e.onclick=ev=>{ev.stopPropagation();push(['f',+e.dataset.f])});
  $$('[data-c]').forEach(e=>e.onclick=()=>push(['e',+e.dataset.c]));
+ $$('[data-pl]').forEach(e=>e.onclick=()=>push(['p',+e.dataset.pl]));
+ $$('[data-pk]').forEach(e=>e.onclick=()=>{const [bi,s]=e.dataset.pk.split(',').map(Number),ci=stack[stack.length-1][1];const m=PSEL[ci]||(PSEL[ci]={});if(m[bi]===s)delete m[bi];else m[bi]=s;const y=scrollY;render();scrollTo({top:y})});
+ $$('[data-pclr]').forEach(e=>e.onclick=()=>{PSEL[+e.dataset.pclr]={};const y=scrollY;render();scrollTo({top:y})});
  const top=stack[stack.length-1];$$('[data-b]').forEach(e=>e.onclick=()=>push(['m',top[1],+e.dataset.b]));
  $$('[data-nb]').forEach(e=>e.onclick=()=>{if(e.disabled||!top||top[0]!='m')return;const nb=+e.dataset.nb;if(!D.cards[top[1]][6][nb])return;stack=[...stack.slice(0,-1),['m',top[1],nb]];history.replaceState(snap(),'',routeOf(tab,stack));render();scrollTo({top:0})});
  $$('[data-d]').forEach(e=>e.onclick=()=>{const i=+e.dataset.d;openDiv=openDiv==i?-1:i;render();syncURL();const el=document.querySelector('.rlist');if(el)el.scrollIntoView({behavior:'smooth',block:'nearest'})});

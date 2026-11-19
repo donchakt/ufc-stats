@@ -1,4 +1,4 @@
-"""Build news.json for the News tab from public RSS feeds (UFC.com, MMA Fighting, MMA Mania, Sherdog, Bloody Elbow, ESPN).
+"""Build news.json for the News tab from public RSS feeds (UFC.com, MMA Fighting, MMA Mania, Sherdog, Bloody Elbow).
 Keeps headlines from the last NEWS_DAYS days that name a fighter in the app (card fighters first), tags a category from
 keywords, and merges hand-curated items from news_manual.json (kept NEWS_DAYS days). Headlines + links only; nothing rehosted.
 Writes cache/news_report.json (feed status) for the health check. Never fails the run: on total failure the old news.json stays."""
@@ -7,7 +7,7 @@ HERE=os.path.dirname(os.path.abspath(__file__)); C=HERE+'/cache/'; os.makedirs(C
 UA='Mozilla/5.0 (compatible; ufc-stats-fan-app/1.0; +https://github.com/donchakt/ufc-stats)'
 FEEDS=[('UFC.com','https://www.ufc.com/rss/news'),('MMA Fighting','https://www.mmafighting.com/rss/current.xml'),
        ('MMA Mania','https://www.mmamania.com/rss/current.xml'),('Sherdog','https://www.sherdog.com/rss/news.xml'),
-       ('Bloody Elbow','https://bloodyelbow.com/feed/'),('ESPN','https://www.espn.com/espn/rss/mma/news')]
+       ('Bloody Elbow','https://bloodyelbow.com/feed/')]   # ESPN's feed answers GitHub Actions with HTTP 202 (bot check), so it is left out
 DAYS=int(os.environ.get('NEWS_DAYS','10')); TODAY=dt.date.today()
 def fold(s): return unicodedata.normalize('NFKD',s).encode('ascii','ignore').decode().lower()
 def clean(s): return re.sub(r'\s+',' ',html.unescape(re.sub(r'<[^>]+>',' ',html.unescape(re.sub(r'<!\[CDATA\[(.*?)\]\]>',r'\1',s or '',flags=re.S))))).strip()

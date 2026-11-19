@@ -4,6 +4,9 @@ import json,os
 from compact import compact
 HERE=os.path.dirname(os.path.abspath(__file__))
 obj=compact(False)
+if os.path.exists(HERE+'/parlay_calib.json'):   # historical leg win rates for the Parlay builder (parlay_calib.py)
+    pc=json.load(open(HERE+'/parlay_calib.json'))
+    obj['pc']=dict(leg=pc['leg'],b={k:[v['n'],v['won']] for k,v in pc['buckets'].items()},par=pc['parlays'],per=pc['period_oos'],n=pc['legs_oos'])
 data=json.dumps(obj,ensure_ascii=False,separators=(',',':'))
 open(HERE+'/data.json','w').write(data)
 HTML=open(HERE+'/web/app.html').read()

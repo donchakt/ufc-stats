@@ -30,3 +30,13 @@ rankings lists. The issue closes itself when the list is empty.
 
 Sources are public pages only, fetched ~1 request every 0.5–2 s with an identifying user agent. Unofficial fan app.
 Ratings/model docs: `app/README.md`. Analyst technical scores in `fighters/` are score tables only.
+
+## Parlay builder (event page → *Parlay builder*)
+Computed in the page from each data refresh, so it updates with every workflow run. A leg is eligible only when the stats
+estimate and the no-vig market pick the same winner. Leg % = 40% stats + 60% market, minus penalties: pick out 730+ days
+(−6), opponent out 730+ days (−2), pick with <2 UFC fights (−4), opponent <2 (−2), stats/market gap over 15 pts
+(−half the excess). Ranking = historical win rate of similar legs (shrunk toward the leg %), tie-break on leg % then style
+(striking differential, takedowns vs opponent TDD, last-3 form). Combined % = product (correlation ignored); odds = product of
+median decimal lines. Historical rates: `app/parlay_calib.py` → `app/parlay_calib.json` (legs on UFC fights 2022+ joined
+with public closing odds from `sources/parlay-hist.csv`; buckets = band × agreement (within 10 pts or not) × risk flags,
+shown when n ≥ 40). Re-run it by hand only if the leg rule or rating model changes. For fun/info, not betting advice.
