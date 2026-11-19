@@ -1,0 +1,9 @@
+# pipeline page cache lives in the Actions cache, not git; only the odds state is committed
+pipeline/app/cache/*
+!pipeline/app/cache/odds.json
+!pipeline/app/cache/bfo/
+pipeline/app/cache/bfo/*
+!pipeline/app/cache/bfo/open.json
+pipeline/app/ufc-stats-app.html
+pipeline/app/data.json
+__pycache__/

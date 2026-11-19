@@ -1,0 +1,1 @@
+# Standard library only (Python 3.10+); nothing to install. curl must be on PATH.

@@ -1,0 +1,53 @@
+{
+ "k": 0.43,
+ "n": 3539,
+ "logloss": 0.6697,
+ "brier": 0.2387,
+ "accuracy": 0.581,
+ "ties": 156,
+ "calibration": [
+  [
+   0.5,
+   0.551,
+   0.54,
+   2149
+  ],
+  [
+   0.6,
+   0.641,
+   0.616,
+   1003
+  ],
+  [
+   0.7,
+   0.733,
+   0.81,
+   221
+  ],
+  [
+   0.8,
+   0.819,
+   0.8,
+   10
+  ]
+ ],
+ "version": 3,
+ "coinflip_logloss": 0.6931,
+ "range": "2018-01-01..2026-11-07",
+ "holdout": {
+  "train": "2018-2021",
+  "test": "2022+",
+  "k": 0.34,
+  "n": 2032,
+  "logloss": 0.6652,
+  "brier": 0.2364,
+  "accuracy": 0.587
+ },
+ "weights": {
+  "RES": 0.4,
+  "SKILL": 0.3,
+  "RANK": 0.3
+ },
+ "shrink_d": 3,
+ "note": "P(A) = 1/(1+exp(-k*(overall_A - overall_B))) on the displayed overall rating (1 dp), each computed before the fight; ranking part uses a point-in-time proxy (title-bout champion + Elo order in class)"
+}

@@ -1,0 +1,36 @@
+# UFC Stats app
+- `fetch_sources.py` – pulls public UFC.com pages (events, upcoming/completed event pages, rankings, athlete pages) into `cache/` (`--refresh` to re-download).
+- `build_app_data.py` – builds `app-data.json` (all upcoming-card fighters + current UFC.com top-15/champions) from the cache + UFCStats mirror + supplement.
+- `compact.py` – tuple-packs the data; `make_html.py` – writes the offline single-file app `ufc-stats-app.html` (all 225 fighters).
+- Page (canvas) = card fighters only (90) for size; its source is saved as `page-source.canvas.tsx`. Weekly refresh: fetch --refresh -> build -> make_html -> rewrite the Page data arrays (EV/FD/CARDS) from `compact.compact(True)`.
+
+## v2 app (5 bottom tabs) — Nov 10 2026
+Tabs: Events (cards → fights in running order → matchup + win probability), Rankings (accordion, one division open), News (news.json, curated, links checked), Search (profile), Compare.
+Pipeline: `fetch_sources.py` (UFC.com + BestFightOdds into cache/) → `build_app_data.py` (→ app-data.json; uses `ratings.py`) → `make_html.py` (→ ufc-stats-app.html, deep links like `#tab=rankings&div=2`, `#v=m,0,0`). `compact.py` packs data for both the HTML and the Page (Page keeps 6 fights for card fighters, 3 for others).
+
+### Overall rating (/10) — ratings.py v2 (Nov 10, 2026; v1 kept in ratings_v1.py)
+**1. Results vs. quality of opposition (RES)** — `elo.py`: Elo over every UFC fight in the data (UFCStats mirror + Oct 2026 event pages + UFC.com results to Nov 7, 2026). Start 1500; K = 64 × (1 + 1/(prior fights + 1)); expected score 1/(1+10^(−ΔElo/400)), so beating strong opponents counts more. KO/TKO or submission ×1.25, split/majority decision ×0.5, DQ ×0.5, draw = 0.5, no-contest = activity only. Inactivity decay toward 1500 before each fight and at "now": R = 1500 + (R−1500)·exp(−max(0, idle years − 0.75)/2.5). RES = 1 + 9/(1+exp(−(Elo−1550)/130)).
+**2. Skill (SKILL), opponent-adjusted** — the five area scores (analyst `fighters/<slug>.md` where present, else `data_ratings.py` percentiles: 60% career / 40% last 4, score = 1 + 9 × percentile). Strength of schedule SoS = recency-weighted (0.8^i) mean pre-fight Elo of the last 6 UFC opponents; area' = 5.5 + (area−5.5)·m + (SoS−1500)/400 with m = clip(1 + (SoS−1500)/600, 0.6, 1.3), clipped 1–10. SKILL = 0.25 Striking + 0.15 Wrestling + 0.15 Grappling + 0.25 Defence + 0.20 Cardio/Durability (adjusted areas; the 5 bars show adjusted areas).
+**3. Ranking (RANK)** — current UFC.com rank in the fighter's division: Champion 10; #k → 9.3 − (k−1)·1.8/14 (#1 9.3 … #15 7.5); unranked 5.0.
+**Overall** (v5, Nov 10 2026) = 0.70·PERF + 0.30·RANK, PERF = prior + shrink·((0.40·RES + 0.30·SKILL)/0.70 − prior), shrink = min(1, (UFC fights+1)/3), prior = pro-record prior for <5 UFC fights else 5.5. I.e. 40% results / 30% skill / 30% ranking for anyone with 2+ UFC fights, plus the résumé bonus; unranked fighters use implied rank = min(7.2, PERF). (v4 was 50/20/30 with shrink (n+1)/5; changed because it scored better on held-out 2022+ fights, see below.)
+Consistency rule: a ranked contender whose last UFC fight was a loss to the reigning champion of that division is capped at champion − 0.1 (applies now to Topuria and Chimaev, both 9.0 → 8.6).
+Checks (`check_ratings.py`, `spearman.json`): Spearman of overall vs official order (champ + #1–15) per division: FLY 0.86, BW 0.91, FW 0.88, LW 0.78, WW 0.86, MW 0.87, LHW 0.67, HW 0.91, W-SW 0.90, W-FLY 0.92, W-BW 0.75. No unranked fighter rates at or above his division's champion. Fewer than 3 UFC fights → marked *; UFC debutants NR.
+Limits: Elo is cross-division (one number per fighter); rankings component is current only; analyst scores exist for 14 fighters.
+
+### Win probabilities
+- **Our model** (v0.4.4): shown only when `events/<card>.v044.json` exists for that card (none yet for upcoming cards).
+- **Stats estimate** (v3 fit, `fit_overall.py`): P(A) = 1 / (1 + exp(−k · (OVERALL_A − OVERALL_B))) on the overall rating exactly as displayed (1 dp), so the higher overall is always the favourite and a bigger gap is always a bigger edge (equal overall = 50%). Fitted on the same 3,539 UFC fights 2018-01-01..2026-11-07 with every input computed strictly before each fight. Historical UFC rankings are not in the data, so the ranking part uses a point-in-time proxy: champion = winner of the latest title bout in the class (vacated if they leave the class or are idle 2+ years), #1-#15 = pre-fight Elo order among fighters active in the class in the last 2 years (today's proxy matches 11/11 official champions and has 128/165 official ranked fighters in its top 15). k = 0.43, log loss 0.6697 (old perf fit 0.6675), Brier 0.2387 (old 0.2375), 58.1% winners excluding 156 equal-rating ties (old 58.5%). Calibration (predicted → actual): 55% → 54% (2,149), 64% → 62% (1,003), 73% → 81% (221), 82% → 80% (10). Held-out (fit 2018-21, test 2022+, n 2,032): log loss 0.6652, Brier 0.2364, 58.7% (v4 weights on the same setup: 0.6686 / 0.2380 / 58.3%). Weight grid on 2018-21: the train-best 25/50/25 tested a little better (0.6649) but flipped more current-market favourites (14/20 vs 16/20 agree) and put Nunes over Harrison; 40/30/30 was chosen as a smaller step that also beats v4 on held-out (log-loss diff −0.0016, 95% bootstrap CI −0.0027..−0.0006). Cached in winprob_fit.json (version 3), components in winprob_hist_components.json; `python3 fit_overall.py --rebuild` recomputes everything.
+- **Market**: median no-vig implied % across sportsbooks on BestFightOdds event pages (book count shown). Context only.
+
+## v3 ratings + redesign (Nov 10, 2026)
+- Unranked fighters: rank component implied from results/Elo (capped 7.2) instead of a flat 5.0.
+- Thin UFC samples (<~5 fights) blend in the pro record as a light prior. Badges: Prospect (<=4 UFC fights, pro win% >=80%, UFC W>L) and Small sample (<3 fights).
+- "Capped 0.1 below the champion who beat him" rule removed.
+- Résumé bonus: Q = sum over UFC wins of max(0,(opp pre-fight Elo-1600)/100)*exp(-yrs/8); bonus = 0.6*(1-exp(-Q/6)), shrunk for thin samples. Elo blended 25% toward the 4-year peak. Overall capped at 9.8.
+- Win-prob fit unchanged (k=0.48, n=3539, 58.5% picks, log loss 0.6675).
+- HTML app: broadcast-style design (web/app.html -> make_html.py). Fighter photos are hotlinked from public UFC.com athlete pages (upper-body style, then full-body, then initials). Unofficial fan app; no UFC logos. PWA manifest + generated octagon icons in web/.
+
+## Odds + area scores v4 (Nov 10, 2026, ~10:25 PM CST)
+- refresh_odds.py: re-pulls public BestFightOdds pages -> cache/odds.json (median moneyline, best line + book, no-vig %, books, opening line from the fighter's BFO page), rebuilds, deploys to GitHub Pages only if odds changed (--force to rebuild anyway, --no-push, --no-verify). ~3-5 s to fetch/build, ~35 s including the Pages md5 check.
+- areas.py: area scores are opponent-adjusted, recency- and opponent-quality-weighted sub-scores on a smooth 1-9.9 logistic scale (see docstring). Tap an area in the app for sub-scores. Win-prob k not refit (historical fit still uses v2 areas).
+- Tale-of-the-tape/profile: gold diamond = division average, "Div avg x" under each stat, legend chip.
