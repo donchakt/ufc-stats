@@ -1,5 +1,5 @@
 {
-"asof": "Nov 20, 2026 10:24 AM CST",
+"asof": "Nov 20, 2026 1:20 PM CST",
 "bouts": [
 {
 "mu": 45180,
@@ -131,12 +131,12 @@
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
 "n": 7,
-"p1": 0.454,
+"p1": 0.4561,
 "f1": {
 "name": "Aljamain Sterling",
 "slug": "aljamain-sterling-4688",
 "med": 109,
-"best": 122,
+"best": 117,
 "book": "Polymarket",
 "nb": 7,
 "open": 116
@@ -145,8 +145,8 @@
 "name": "Kevin Vallejos",
 "slug": "kevin-vallejos-16459",
 "med": -132,
-"best": -125,
-"book": "Caesars",
+"best": -122,
+"book": "Polymarket",
 "nb": 7,
 "open": -135
 }
@@ -210,7 +210,7 @@
 "f1": {
 "name": "Brian Ortega",
 "slug": "brian-ortega-4290",
-"med": 155,
+"med": 158,
 "best": 170,
 "book": "Polymarket",
 "nb": 7,
@@ -219,7 +219,7 @@
 "f2": {
 "name": "Dan Hooker",
 "slug": "dan-hooker-6767",
-"med": -192,
+"med": -191,
 "best": -178,
 "book": "Polymarket",
 "nb": 7,
@@ -231,7 +231,7 @@
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
 "n": 7,
-"p1": 0.3632,
+"p1": 0.3614,
 "f1": {
 "name": "Asu Almabayev",
 "slug": "asu-almabayev-16167",
@@ -245,8 +245,8 @@
 "name": "Kyoji Horiguchi",
 "slug": "kyoji-horiguchi-4642",
 "med": -200,
-"best": -186,
-"book": "Polymarket",
+"best": -180,
+"book": "FanDuel",
 "nb": 7,
 "open": -135
 }
@@ -287,7 +287,7 @@
 "slug": "aleksandre-topuria-19097",
 "med": -291,
 "best": -275,
-"book": "BetWay",
+"book": "FanDuel",
 "nb": 7,
 "open": -220
 },
@@ -360,7 +360,7 @@
 "f1": {
 "name": "Jake Matthews",
 "slug": "jake-matthews-4978",
-"med": -251,
+"med": -250,
 "best": -233,
 "book": "Polymarket",
 "nb": 7,
@@ -406,12 +406,12 @@
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
 "n": 7,
-"p1": 0.3146,
+"p1": 0.3111,
 "f1": {
 "name": "Alik Lorenz",
 "slug": "alik-lorenz-15278",
 "med": 205,
-"best": 213,
+"best": 223,
 "book": "Polymarket",
 "nb": 7,
 "open": 212
@@ -419,9 +419,9 @@
 "f2": {
 "name": "Diyar Nurgozhay",
 "slug": "diyar-nurgozhay-11550",
-"med": -251,
-"best": -223,
-"book": "Polymarket",
+"med": -260,
+"best": -225,
+"book": "BetWay",
 "nb": 7,
 "open": -255
 }
@@ -430,24 +430,24 @@
 "mu": 45842,
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
-"n": 6,
-"p1": 0.555,
+"n": 7,
+"p1": 0.5526,
 "f1": {
 "name": "John Mitchell",
 "slug": "john-mitchell-9633",
-"med": -138,
+"med": -134,
 "best": -125,
 "book": "BetWay",
-"nb": 6,
+"nb": 7,
 "open": 176
 },
 "f2": {
 "name": "Shoaib Yousaf",
 "slug": "shoaib-yousaf-10875",
-"med": 114,
+"med": 115,
 "best": 122,
 "book": "Polymarket",
-"nb": 6,
+"nb": 7,
 "open": -209
 }
 }
