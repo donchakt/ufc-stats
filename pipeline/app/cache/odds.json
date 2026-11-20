@@ -1,5 +1,5 @@
 {
-"asof": "Nov 20, 2026 1:46 AM CST",
+"asof": "Nov 20, 2026 5:44 AM CST",
 "bouts": [
 {
 "mu": 45180,
@@ -135,7 +135,7 @@
 "f1": {
 "name": "Aljamain Sterling",
 "slug": "aljamain-sterling-4688",
-"med": 110,
+"med": 109,
 "best": 122,
 "book": "Polymarket",
 "nb": 7,
@@ -281,13 +281,13 @@
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
 "n": 7,
-"p1": 0.7162,
+"p1": 0.7183,
 "f1": {
 "name": "Aleksandre Topuria",
 "slug": "aleksandre-topuria-19097",
-"med": -291,
-"best": -270,
-"book": "Polymarket",
+"med": -295,
+"best": -275,
+"book": "BetWay",
 "nb": 7,
 "open": -220
 },
@@ -295,7 +295,7 @@
 "name": "Santiago Luna",
 "slug": "santiago-luna-19813",
 "med": 239,
-"best": 257,
+"best": 270,
 "book": "Polymarket",
 "nb": 7,
 "open": 185
@@ -306,7 +306,7 @@
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
 "n": 7,
-"p1": 0.6371,
+"p1": 0.6387,
 "f1": {
 "name": "Shamil Gaziev",
 "slug": "shamil-gaziev-12522",
@@ -320,7 +320,7 @@
 "name": "Tallison Teixeira",
 "slug": "tallison-teixeira-18424",
 "med": 163,
-"best": 170,
+"best": 178,
 "book": "Polymarket",
 "nb": 7,
 "open": 149
@@ -430,15 +430,15 @@
 "mu": 45842,
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
-"n": 5,
-"p1": 0.556,
+"n": 6,
+"p1": 0.5543,
 "f1": {
 "name": "John Mitchell",
 "slug": "john-mitchell-9633",
-"med": -141,
-"best": -125,
-"book": "BetWay",
-"nb": 5,
+"med": -138,
+"best": -108,
+"book": "Polymarket",
+"nb": 6,
 "open": 176
 },
 "f2": {
@@ -447,7 +447,7 @@
 "med": 114,
 "best": 118,
 "book": "FanDuel",
-"nb": 5,
+"nb": 6,
 "open": -209
 }
 }
