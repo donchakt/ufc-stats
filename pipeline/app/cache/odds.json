@@ -1,5 +1,5 @@
 {
-"asof": "Nov 20, 2026 1:20 PM CST",
+"asof": "Nov 20, 2026 2:25 PM CST",
 "bouts": [
 {
 "mu": 45180,
@@ -81,11 +81,11 @@
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
 "n": 7,
-"p1": 0.3972,
+"p1": 0.3947,
 "f1": {
 "name": "Jiri Prochazka",
 "slug": "jiri-prochazka-6058",
-"med": 140,
+"med": 142,
 "best": 156,
 "book": "Polymarket",
 "nb": 7,
@@ -94,9 +94,9 @@
 "f2": {
 "name": "Navajo Stirling",
 "slug": "navajo-stirling-18344",
-"med": -163,
-"best": -162,
-"book": "BetRivers",
+"med": -175,
+"best": -163,
+"book": "Polymarket",
 "nb": 7,
 "open": -140
 }
@@ -286,8 +286,8 @@
 "name": "Aleksandre Topuria",
 "slug": "aleksandre-topuria-19097",
 "med": -291,
-"best": -275,
-"book": "FanDuel",
+"best": -270,
+"book": "Polymarket",
 "nb": 7,
 "open": -220
 },
@@ -295,7 +295,7 @@
 "name": "Santiago Luna",
 "slug": "santiago-luna-19813",
 "med": 240,
-"best": 270,
+"best": 257,
 "book": "Polymarket",
 "nb": 7,
 "open": 185
@@ -381,21 +381,21 @@
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
 "n": 7,
-"p1": 0.5907,
+"p1": 0.5996,
 "f1": {
 "name": "Dom Mar Fan",
 "slug": "dom-mar-fan-19458",
 "med": -157,
-"best": -150,
-"book": "Polymarket",
+"best": -155,
+"book": "Caesars",
 "nb": 7,
 "open": -150
 },
 "f2": {
 "name": "Nikolas Motta",
 "slug": "nikolas-motta-9314",
-"med": 134,
-"best": 144,
+"med": 140,
+"best": 150,
 "book": "Polymarket",
 "nb": 7,
 "open": 128
@@ -431,11 +431,11 @@
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
 "n": 7,
-"p1": 0.5526,
+"p1": 0.562,
 "f1": {
 "name": "John Mitchell",
 "slug": "john-mitchell-9633",
-"med": -134,
+"med": -138,
 "best": -125,
 "book": "BetWay",
 "nb": 7,
@@ -444,8 +444,8 @@
 "f2": {
 "name": "Shoaib Yousaf",
 "slug": "shoaib-yousaf-10875",
-"med": 115,
-"best": 122,
+"med": 118,
+"best": 133,
 "book": "Polymarket",
 "nb": 7,
 "open": -209
