@@ -1,5 +1,5 @@
 {
-"asof": "Nov 21, 2026 12:16 PM CST",
+"asof": "Nov 21, 2026 1:19 PM CST",
 "bouts": [
 {
 "mu": 45180,
@@ -81,12 +81,12 @@
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
 "n": 7,
-"p1": 0.3799,
+"p1": 0.3614,
 "f1": {
 "name": "Jiri Prochazka",
 "slug": "jiri-prochazka-6058",
-"med": 150,
-"best": 178,
+"med": 166,
+"best": 203,
 "book": "Polymarket",
 "nb": 7,
 "open": 120
@@ -94,9 +94,9 @@
 "f2": {
 "name": "Navajo Stirling",
 "slug": "navajo-stirling-18344",
-"med": -185,
-"best": -176,
-"book": "FanDuel",
+"med": -198,
+"best": -188,
+"book": "BetWay",
 "nb": 7,
 "open": -140
 }
@@ -161,7 +161,7 @@
 "name": "Israel Adesanya",
 "slug": "israel-adesanya-7845",
 "med": -157,
-"best": -138,
+"best": -133,
 "book": "Polymarket",
 "nb": 6,
 "open": -125
@@ -181,13 +181,13 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 6,
-"p1": 0.6216,
+"p1": 0.6238,
 "f1": {
 "name": "Ian Machado Garry",
 "slug": "ian-machado-garry-15690",
-"med": -188,
-"best": -150,
-"book": "Polymarket",
+"med": -193,
+"best": -175,
+"book": "BetWay",
 "nb": 6,
 "open": -160
 },
@@ -231,21 +231,21 @@
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
 "n": 7,
-"p1": 0.3632,
+"p1": 0.3614,
 "f1": {
 "name": "Asu Almabayev",
 "slug": "asu-almabayev-16167",
-"med": 163,
-"best": 166,
-"book": "FanDuel",
+"med": 165,
+"best": 572,
+"book": "Kalshi",
 "nb": 7,
 "open": 116
 },
 "f2": {
 "name": "Kyoji Horiguchi",
 "slug": "kyoji-horiguchi-4642",
-"med": -198,
-"best": -163,
+"med": -200,
+"best": -150,
 "book": "Polymarket",
 "nb": 7,
 "open": -135
@@ -270,7 +270,7 @@
 "name": "Jared Cannonier",
 "slug": "jared-cannonier-5333",
 "med": 245,
-"best": 317,
+"best": 1900,
 "book": "Polymarket",
 "nb": 7,
 "open": 284
