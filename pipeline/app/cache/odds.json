@@ -1,5 +1,5 @@
 {
-"asof": "Nov 21, 2026 1:19 PM CST",
+"asof": "Nov 21, 2026 2:14 PM CST",
 "bouts": [
 {
 "mu": 45180,
@@ -81,11 +81,11 @@
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
 "n": 7,
-"p1": 0.3614,
+"p1": 0.3444,
 "f1": {
 "name": "Jiri Prochazka",
 "slug": "jiri-prochazka-6058",
-"med": 166,
+"med": 175,
 "best": 203,
 "book": "Polymarket",
 "nb": 7,
@@ -94,7 +94,7 @@
 "f2": {
 "name": "Navajo Stirling",
 "slug": "navajo-stirling-18344",
-"med": -198,
+"med": -213,
 "best": -188,
 "book": "BetWay",
 "nb": 7,
@@ -131,21 +131,21 @@
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
 "n": 7,
-"p1": 0.4675,
+"p1": 0.463,
 "f1": {
 "name": "Aljamain Sterling",
 "slug": "aljamain-sterling-4688",
 "med": 107,
-"best": 108,
-"book": "Polymarket",
+"best": 312,
+"book": "Kalshi",
 "nb": 7,
 "open": 116
 },
 "f2": {
 "name": "Kevin Vallejos",
 "slug": "kevin-vallejos-16459",
-"med": -125,
-"best": -113,
+"med": -126,
+"best": -104,
 "book": "Polymarket",
 "nb": 7,
 "open": -135
@@ -161,7 +161,7 @@
 "name": "Israel Adesanya",
 "slug": "israel-adesanya-7845",
 "med": -157,
-"best": -133,
+"best": -150,
 "book": "Polymarket",
 "nb": 6,
 "open": -125
@@ -181,7 +181,7 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 6,
-"p1": 0.6238,
+"p1": 0.6255,
 "f1": {
 "name": "Ian Machado Garry",
 "slug": "ian-machado-garry-15690",
@@ -194,9 +194,9 @@
 "f2": {
 "name": "Yaroslav Amosov",
 "slug": "yaroslav-amosov-8304",
-"med": 151,
-"best": 155,
-"book": "Caesars",
+"med": 155,
+"best": 156,
+"book": "Polymarket",
 "nb": 6,
 "open": 136
 }
@@ -206,22 +206,22 @@
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
 "n": 7,
-"p1": 0.3561,
+"p1": 0.3518,
 "f1": {
 "name": "Brian Ortega",
 "slug": "brian-ortega-4290",
 "med": 170,
-"best": 178,
-"book": "Polymarket",
+"best": 4566,
+"book": "Kalshi",
 "nb": 7,
 "open": 201
 },
 "f2": {
 "name": "Dan Hooker",
 "slug": "dan-hooker-6767",
-"med": -200,
-"best": -186,
-"book": "Polymarket",
+"med": -215,
+"best": -188,
+"book": "FanDuel",
 "nb": 7,
 "open": -240
 }
