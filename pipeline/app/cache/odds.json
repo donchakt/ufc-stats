@@ -1,5 +1,5 @@
 {
-"asof": "Nov 20, 2026 4:49 PM CST",
+"asof": "Nov 20, 2026 8:19 PM CST",
 "bouts": [
 {
 "mu": 45180,
@@ -231,12 +231,12 @@
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
 "n": 7,
-"p1": 0.3632,
+"p1": 0.3665,
 "f1": {
 "name": "Asu Almabayev",
 "slug": "asu-almabayev-16167",
-"med": 165,
-"best": 178,
+"med": 163,
+"best": 170,
 "book": "Polymarket",
 "nb": 7,
 "open": 116
@@ -244,9 +244,9 @@
 "f2": {
 "name": "Kyoji Horiguchi",
 "slug": "kyoji-horiguchi-4642",
-"med": -195,
-"best": -180,
-"book": "FanDuel",
+"med": -190,
+"best": -178,
+"book": "Polymarket",
 "nb": 7,
 "open": -135
 }
@@ -261,8 +261,8 @@
 "name": "Ikram Aliskerov",
 "slug": "ikram-aliskerov-10994",
 "med": -300,
-"best": -285,
-"book": "Polymarket",
+"best": -290,
+"book": "Caesars",
 "nb": 7,
 "open": -350
 },
@@ -270,7 +270,7 @@
 "name": "Jared Cannonier",
 "slug": "jared-cannonier-5333",
 "med": 235,
-"best": 270,
+"best": 285,
 "book": "Polymarket",
 "nb": 7,
 "open": 284
@@ -281,7 +281,7 @@
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
 "n": 7,
-"p1": 0.7183,
+"p1": 0.7161,
 "f1": {
 "name": "Aleksandre Topuria",
 "slug": "aleksandre-topuria-19097",
@@ -294,7 +294,7 @@
 "f2": {
 "name": "Santiago Luna",
 "slug": "santiago-luna-19813",
-"med": 240,
+"med": 235,
 "best": 257,
 "book": "Polymarket",
 "nb": 7,
@@ -356,7 +356,7 @@
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
 "n": 7,
-"p1": 0.6933,
+"p1": 0.687,
 "f1": {
 "name": "Jake Matthews",
 "slug": "jake-matthews-4978",
@@ -369,7 +369,7 @@
 "f2": {
 "name": "Tahir Abdullayev",
 "slug": "tahir-abdullayev-22321",
-"med": 210,
+"med": 207,
 "best": 223,
 "book": "Polymarket",
 "nb": 7,
@@ -406,12 +406,12 @@
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
 "n": 7,
-"p1": 0.3111,
+"p1": 0.3087,
 "f1": {
 "name": "Alik Lorenz",
 "slug": "alik-lorenz-15278",
-"med": 207,
-"best": 233,
+"med": 210,
+"best": 245,
 "book": "Polymarket",
 "nb": 7,
 "open": 212
