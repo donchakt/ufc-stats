@@ -1,5 +1,5 @@
 {
-"asof": "Nov 21, 2026 7:22 PM CST",
+"asof": "Nov 21, 2026 9:26 PM CST",
 "bouts": [
 {
 "mu": 45180,
@@ -160,9 +160,9 @@
 "f1": {
 "name": "Israel Adesanya",
 "slug": "israel-adesanya-7845",
-"med": -157,
-"best": -156,
-"book": "Polymarket",
+"med": -160,
+"best": -157,
+"book": "BetRivers",
 "nb": 6,
 "open": -125
 },
@@ -170,7 +170,7 @@
 "name": "Shara Magomedov",
 "slug": "shara-magomedov-17740",
 "med": 129,
-"best": 150,
+"best": 144,
 "book": "Polymarket",
 "nb": 6,
 "open": 107
