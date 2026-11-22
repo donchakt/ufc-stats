@@ -1,5 +1,5 @@
 {
-"asof": "Nov 21, 2026 2:14 PM CST",
+"asof": "Nov 21, 2026 6:41 PM CST",
 "bouts": [
 {
 "mu": 45180,
@@ -12,7 +12,7 @@
 "slug": "charles-oliveira-1893",
 "med": -155,
 "best": -150,
-"book": "BetWay",
+"book": "Caesars",
 "nb": 5,
 "open": -190
 },
@@ -36,8 +36,8 @@
 "name": "Alex Pereira",
 "slug": "alex-pereira-10463",
 "med": 160,
-"best": 163,
-"book": "BetWay",
+"best": 165,
+"book": "Caesars",
 "nb": 5,
 "open": 110
 },
@@ -45,8 +45,8 @@
 "name": "Sergei Pavlovich",
 "slug": "sergei-pavlovich-8961",
 "med": -200,
-"best": -200,
-"book": "BetRivers",
+"best": -195,
+"book": "Caesars",
 "nb": 5,
 "open": -140
 }
@@ -81,12 +81,12 @@
 "event": "UFC Doha",
 "url": "https://www.bestfightodds.com/events/ufc-doha-4440",
 "n": 7,
-"p1": 0.3444,
+"p1": 0.3464,
 "f1": {
 "name": "Jiri Prochazka",
 "slug": "jiri-prochazka-6058",
 "med": 175,
-"best": 203,
+"best": 186,
 "book": "Polymarket",
 "nb": 7,
 "open": 120
@@ -94,9 +94,9 @@
 "f2": {
 "name": "Navajo Stirling",
 "slug": "navajo-stirling-18344",
-"med": -213,
-"best": -188,
-"book": "BetWay",
+"med": -205,
+"best": -117,
+"book": "Kalshi",
 "nb": 7,
 "open": -140
 }
@@ -136,7 +136,7 @@
 "name": "Aljamain Sterling",
 "slug": "aljamain-sterling-4688",
 "med": 107,
-"best": 312,
+"best": 295,
 "book": "Kalshi",
 "nb": 7,
 "open": 116
@@ -161,7 +161,7 @@
 "name": "Israel Adesanya",
 "slug": "israel-adesanya-7845",
 "med": -157,
-"best": -150,
+"best": -133,
 "book": "Polymarket",
 "nb": 6,
 "open": -125
@@ -169,7 +169,7 @@
 "f2": {
 "name": "Shara Magomedov",
 "slug": "shara-magomedov-17740",
-"med": 127,
+"med": 128,
 "best": 130,
 "book": "Caesars",
 "nb": 6,
