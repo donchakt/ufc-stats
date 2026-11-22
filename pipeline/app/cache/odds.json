@@ -1,5 +1,5 @@
 {
-"asof": "Nov 21, 2026 6:41 PM CST",
+"asof": "Nov 21, 2026 7:22 PM CST",
 "bouts": [
 {
 "mu": 45180,
@@ -156,12 +156,12 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 6,
-"p1": 0.5818,
+"p1": 0.5855,
 "f1": {
 "name": "Israel Adesanya",
 "slug": "israel-adesanya-7845",
 "med": -157,
-"best": -133,
+"best": -156,
 "book": "Polymarket",
 "nb": 6,
 "open": -125
@@ -169,9 +169,9 @@
 "f2": {
 "name": "Shara Magomedov",
 "slug": "shara-magomedov-17740",
-"med": 128,
-"best": 130,
-"book": "Caesars",
+"med": 129,
+"best": 150,
+"book": "Polymarket",
 "nb": 6,
 "open": 107
 }
