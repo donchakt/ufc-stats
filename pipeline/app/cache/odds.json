@@ -1,5 +1,5 @@
 {
-"asof": "Nov 22, 2026 12:39 PM CST",
+"asof": "Nov 22, 2026 1:43 PM CST",
 "bouts": [
 {
 "mu": 45180,
@@ -206,12 +206,12 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 1,
-"p1": 0.6097,
+"p1": 0.6235,
 "f1": {
 "name": "Abdul Hussein",
 "slug": "abdul-hussein-7518",
-"med": -178,
-"best": -178,
+"med": -170,
+"best": -170,
 "book": "Polymarket",
 "nb": 1,
 "open": -150
@@ -219,8 +219,8 @@
 "f2": {
 "name": "Hecher Sosa",
 "slug": "hecher-sosa-16785",
-"med": 144,
-"best": 144,
+"med": 163,
+"best": 163,
 "book": "Polymarket",
 "nb": 1,
 "open": 128
@@ -299,6 +299,56 @@
 "book": "Polymarket",
 "nb": 1,
 "open": 216
+}
+},
+{
+"mu": 45879,
+"event": "UFC Saudi Arabia",
+"url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
+"n": 1,
+"p1": 0.5439,
+"f1": {
+"name": "Ivan Gnizditskiy",
+"slug": "ivan-gnizditskiy-23273",
+"med": -122,
+"best": -122,
+"book": "Polymarket",
+"nb": 1,
+"open": -150
+},
+"f2": {
+"name": "Uran Satybaldiev",
+"slug": "uran-satybaldiev-16347",
+"med": 117,
+"best": 117,
+"book": "Polymarket",
+"nb": 1,
+"open": 128
+}
+},
+{
+"mu": 45880,
+"event": "UFC Saudi Arabia",
+"url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
+"n": 1,
+"p1": 0.3464,
+"f1": {
+"name": "Junyong Park",
+"slug": "junyong-park-20122",
+"med": 186,
+"best": 186,
+"book": "Polymarket",
+"nb": 1,
+"open": 157
+},
+"f2": {
+"name": "Marco Tulio",
+"slug": "marco-tulio-18271",
+"med": -194,
+"best": -194,
+"book": "Polymarket",
+"nb": 1,
+"open": -185
 }
 }
 ]
