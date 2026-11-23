@@ -1,5 +1,5 @@
 {
-"asof": "Nov 23, 2026 6:50 AM CST",
+"asof": "Nov 23, 2026 4:59 PM CST",
 "bouts": [
 {
 "mu": 45180,
@@ -106,12 +106,12 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 6,
-"p1": 0.5899,
+"p1": 0.5907,
 "f1": {
 "name": "Israel Adesanya",
 "slug": "israel-adesanya-7845",
 "med": -167,
-"best": -138,
+"best": -156,
 "book": "Polymarket",
 "nb": 6,
 "open": -125
@@ -120,8 +120,8 @@
 "name": "Shara Magomedov",
 "slug": "shara-magomedov-17740",
 "med": 130,
-"best": 152,
-"book": "FanDuel",
+"best": 144,
+"book": "Polymarket",
 "nb": 6,
 "open": 107
 }
@@ -131,22 +131,22 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 6,
-"p1": 0.6238,
+"p1": 0.618,
 "f1": {
 "name": "Ian Machado Garry",
 "slug": "ian-machado-garry-15690",
-"med": -193,
-"best": -175,
-"book": "BetWay",
+"med": -191,
+"best": -163,
+"book": "Polymarket",
 "nb": 6,
 "open": -160
 },
 "f2": {
 "name": "Yaroslav Amosov",
 "slug": "yaroslav-amosov-8304",
-"med": 151,
-"best": 186,
-"book": "Polymarket",
+"med": 146,
+"best": 155,
+"book": "BetRivers",
 "nb": 6,
 "open": 136
 }
@@ -186,7 +186,7 @@
 "name": "Islam Dulatov",
 "slug": "islam-dulatov-14955",
 "med": -245,
-"best": -223,
+"best": -178,
 "book": "Polymarket",
 "nb": 3,
 "open": -265
@@ -231,12 +231,12 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 3,
-"p1": 0.6038,
+"p1": 0.5915,
 "f1": {
 "name": "Abdul Hussein",
 "slug": "abdul-hussein-7518",
 "med": -170,
-"best": -163,
+"best": -138,
 "book": "Polymarket",
 "nb": 3,
 "open": -150
@@ -244,9 +244,9 @@
 "f2": {
 "name": "Hecher Sosa",
 "slug": "hecher-sosa-16785",
-"med": 138,
-"best": 156,
-"book": "Polymarket",
+"med": 133,
+"best": 138,
+"book": "FanDuel",
 "nb": 3,
 "open": 128
 }
@@ -256,11 +256,11 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 2,
-"p1": 0.3937,
+"p1": 0.3959,
 "f1": {
 "name": "Ion Cutelaba",
 "slug": "ion-cutelaba-4315",
-"med": 127,
+"med": 142,
 "best": 146,
 "book": "FanDuel",
 "nb": 2,
@@ -269,9 +269,9 @@
 "f2": {
 "name": "Magomed Tuchalov",
 "slug": "magomed-tuchalov-19566",
-"med": -213,
-"best": -188,
-"book": "FanDuel",
+"med": -171,
+"best": -156,
+"book": "Polymarket",
 "nb": 2,
 "open": -194
 }
@@ -281,13 +281,13 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 3,
-"p1": 0.431,
+"p1": 0.4171,
 "f1": {
 "name": "Bruno Silva",
 "slug": "bruno-silva-7121",
-"med": 122,
-"best": 126,
-"book": "FanDuel",
+"med": 126,
+"best": 138,
+"book": "Polymarket",
 "nb": 3,
 "open": 128
 },
@@ -295,7 +295,7 @@
 "name": "Jafel Filho",
 "slug": "jafel-filho-14406",
 "med": -150,
-"best": -127,
+"best": -144,
 "book": "Polymarket",
 "nb": 3,
 "open": -150
@@ -331,7 +331,7 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 2,
-"p1": 0.5506,
+"p1": 0.5477,
 "f1": {
 "name": "Ivan Gnizditskiy",
 "slug": "ivan-gnizditskiy-23273",
@@ -344,7 +344,7 @@
 "f2": {
 "name": "Uran Satybaldiev",
 "slug": "uran-satybaldiev-16347",
-"med": 115,
+"med": 113,
 "best": 118,
 "book": "FanDuel",
 "nb": 2,
@@ -394,9 +394,9 @@
 "f2": {
 "name": "Pavel Andrusca",
 "slug": "pavel-andrusca-20415",
-"med": -138,
-"best": -130,
-"book": "Caesars",
+"med": -140,
+"best": -138,
+"book": "Polymarket",
 "nb": 3,
 "open": -310
 }
@@ -411,7 +411,7 @@
 "name": "Matthieu Duclos",
 "slug": "matthieu-duclos-13753",
 "med": -150,
-"best": -113,
+"best": -133,
 "book": "Polymarket",
 "nb": 3,
 "open": -240
@@ -419,9 +419,9 @@
 "f2": {
 "name": "Modestino Rodrigues",
 "slug": "modestino-rodrigues-23275",
-"med": 120,
-"best": 126,
-"book": "FanDuel",
+"med": 126,
+"best": 127,
+"book": "Polymarket",
 "nb": 3,
 "open": 201
 }
