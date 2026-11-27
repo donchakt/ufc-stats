@@ -1,5 +1,5 @@
 {
-"asof": "Nov 26, 2026 2:35 PM CST",
+"asof": "Nov 26, 2026 7:45 PM CST",
 "bouts": [
 {
 "mu": 45180,
@@ -111,7 +111,7 @@
 "name": "Israel Adesanya",
 "slug": "israel-adesanya-7845",
 "med": -166,
-"best": -133,
+"best": -138,
 "book": "Polymarket",
 "nb": 6,
 "open": -125
@@ -131,12 +131,12 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 6,
-"p1": 0.6163,
+"p1": 0.6126,
 "f1": {
 "name": "Ian Machado Garry",
 "slug": "ian-machado-garry-15690",
 "med": -182,
-"best": -170,
+"best": -150,
 "book": "Polymarket",
 "nb": 6,
 "open": -160
@@ -144,9 +144,9 @@
 "f2": {
 "name": "Yaroslav Amosov",
 "slug": "yaroslav-amosov-8304",
-"med": 148,
-"best": 163,
-"book": "Polymarket",
+"med": 145,
+"best": 160,
+"book": "Caesars",
 "nb": 6,
 "open": 136
 }
@@ -206,20 +206,20 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 6,
-"p1": 0.4396,
+"p1": 0.4386,
 "f1": {
 "name": "Gabriel Santos",
 "slug": "gabriel-santos-14703",
 "med": 116,
-"best": 122,
-"book": "Caesars",
+"best": 127,
+"book": "Polymarket",
 "nb": 6,
 "open": 157
 },
 "f2": {
 "name": "Luke Riley",
 "slug": "luke-riley-12585",
-"med": -146,
+"med": -144,
 "best": -143,
 "book": "BetRivers",
 "nb": 6,
@@ -320,7 +320,7 @@
 "name": "Jafel Filho",
 "slug": "jafel-filho-14406",
 "med": -143,
-"best": -117,
+"best": -113,
 "book": "Polymarket",
 "nb": 6,
 "open": -150
