@@ -1,5 +1,5 @@
 {
-"asof": "Nov 27, 2026 6:27 AM CST",
+"asof": "Nov 27, 2026 1:11 PM CST",
 "bouts": [
 {
 "mu": 45180,
@@ -111,7 +111,7 @@
 "name": "Israel Adesanya",
 "slug": "israel-adesanya-7845",
 "med": -166,
-"best": -138,
+"best": -133,
 "book": "Polymarket",
 "nb": 6,
 "open": -125
@@ -119,7 +119,7 @@
 "f2": {
 "name": "Shara Magomedov",
 "slug": "shara-magomedov-17740",
-"med": 136,
+"med": 133,
 "best": 145,
 "book": "Caesars",
 "nb": 6,
@@ -131,12 +131,12 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 6,
-"p1": 0.613,
+"p1": 0.6163,
 "f1": {
 "name": "Ian Machado Garry",
 "slug": "ian-machado-garry-15690",
 "med": -182,
-"best": -163,
+"best": -178,
 "book": "Polymarket",
 "nb": 6,
 "open": -160
@@ -145,8 +145,8 @@
 "name": "Yaroslav Amosov",
 "slug": "yaroslav-amosov-8304",
 "med": 148,
-"best": 160,
-"book": "Caesars",
+"best": 170,
+"book": "Polymarket",
 "nb": 6,
 "open": 136
 }
@@ -235,7 +235,7 @@
 "f1": {
 "name": "Elves Brener",
 "slug": "elves-brener-16626",
-"med": 108,
+"med": 113,
 "best": 120,
 "book": "BetWay",
 "nb": 5,
@@ -244,9 +244,9 @@
 "f2": {
 "name": "Mateusz Rebecki",
 "slug": "mateusz-rebecki-10102",
-"med": -144,
-"best": -134,
-"book": "BetRivers",
+"med": -134,
+"best": -122,
+"book": "Polymarket",
 "nb": 5,
 "open": -220
 }
@@ -256,11 +256,11 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 6,
-"p1": 0.6097,
+"p1": 0.6101,
 "f1": {
 "name": "Abdul Hussein",
 "slug": "abdul-hussein-7518",
-"med": -177,
+"med": -180,
 "best": -163,
 "book": "Polymarket",
 "nb": 6,
@@ -310,7 +310,7 @@
 "f1": {
 "name": "Bruno Silva",
 "slug": "bruno-silva-7121",
-"med": 114,
+"med": 117,
 "best": 118,
 "book": "FanDuel",
 "nb": 6,
@@ -320,7 +320,7 @@
 "name": "Jafel Filho",
 "slug": "jafel-filho-14406",
 "med": -143,
-"best": -113,
+"best": -127,
 "book": "Polymarket",
 "nb": 6,
 "open": -150
@@ -410,9 +410,9 @@
 "f1": {
 "name": "Mahammadali Osmanli",
 "slug": "mahammadali-osmanli-23274",
-"med": 102,
-"best": 110,
-"book": "FanDuel",
+"med": 104,
+"best": 122,
+"book": "Caesars",
 "nb": 6,
 "open": 254
 },
