@@ -1,5 +1,5 @@
 {
-"asof": "Nov 27, 2026 3:06 AM CST",
+"asof": "Nov 27, 2026 6:27 AM CST",
 "bouts": [
 {
 "mu": 45180,
@@ -219,7 +219,7 @@
 "f2": {
 "name": "Luke Riley",
 "slug": "luke-riley-12585",
-"med": -146,
+"med": -144,
 "best": -143,
 "book": "BetRivers",
 "nb": 6,
@@ -386,7 +386,7 @@
 "name": "Junyong Park",
 "slug": "junyong-park-20122",
 "med": 141,
-"best": 186,
+"best": 170,
 "book": "Polymarket",
 "nb": 6,
 "open": 157
@@ -394,7 +394,7 @@
 "f2": {
 "name": "Marco Tulio",
 "slug": "marco-tulio-18271",
-"med": -182,
+"med": -179,
 "best": -175,
 "book": "BetRivers",
 "nb": 6,
@@ -406,22 +406,22 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 6,
-"p1": 0.4655,
+"p1": 0.4741,
 "f1": {
 "name": "Mahammadali Osmanli",
 "slug": "mahammadali-osmanli-23274",
-"med": 105,
-"best": 122,
-"book": "Polymarket",
+"med": 102,
+"best": 110,
+"book": "FanDuel",
 "nb": 6,
 "open": 254
 },
 "f2": {
 "name": "Pavel Andrusca",
 "slug": "pavel-andrusca-20415",
-"med": -126,
-"best": -124,
-"book": "BetRivers",
+"med": -124,
+"best": -113,
+"book": "Polymarket",
 "nb": 6,
 "open": -310
 }
