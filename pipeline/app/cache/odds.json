@@ -1,5 +1,5 @@
 {
-"asof": "Nov 26, 2026 7:45 PM CST",
+"asof": "Nov 27, 2026 3:06 AM CST",
 "bouts": [
 {
 "mu": 45180,
@@ -119,7 +119,7 @@
 "f2": {
 "name": "Shara Magomedov",
 "slug": "shara-magomedov-17740",
-"med": 133,
+"med": 136,
 "best": 145,
 "book": "Caesars",
 "nb": 6,
@@ -131,12 +131,12 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 6,
-"p1": 0.6126,
+"p1": 0.613,
 "f1": {
 "name": "Ian Machado Garry",
 "slug": "ian-machado-garry-15690",
 "med": -182,
-"best": -150,
+"best": -163,
 "book": "Polymarket",
 "nb": 6,
 "open": -160
@@ -144,7 +144,7 @@
 "f2": {
 "name": "Yaroslav Amosov",
 "slug": "yaroslav-amosov-8304",
-"med": 145,
+"med": 148,
 "best": 160,
 "book": "Caesars",
 "nb": 6,
@@ -161,7 +161,7 @@
 "name": "Mario Pinto",
 "slug": "mario-pinto-18577",
 "med": -347,
-"best": -335,
+"best": -317,
 "book": "Polymarket",
 "nb": 6,
 "open": -286
@@ -170,7 +170,7 @@
 "name": "Serghei Spivac",
 "slug": "serghei-spivac-9985",
 "med": 258,
-"best": 317,
+"best": 300,
 "book": "Polymarket",
 "nb": 6,
 "open": 236
@@ -219,7 +219,7 @@
 "f2": {
 "name": "Luke Riley",
 "slug": "luke-riley-12585",
-"med": -144,
+"med": -146,
 "best": -143,
 "book": "BetRivers",
 "nb": 6,
@@ -244,7 +244,7 @@
 "f2": {
 "name": "Mateusz Rebecki",
 "slug": "mateusz-rebecki-10102",
-"med": -138,
+"med": -144,
 "best": -134,
 "book": "BetRivers",
 "nb": 5,
@@ -261,8 +261,8 @@
 "name": "Abdul Hussein",
 "slug": "abdul-hussein-7518",
 "med": -177,
-"best": -164,
-"book": "BetWay",
+"best": -163,
+"book": "Polymarket",
 "nb": 6,
 "open": -150
 },
@@ -270,7 +270,7 @@
 "name": "Hecher Sosa",
 "slug": "hecher-sosa-16785",
 "med": 143,
-"best": 163,
+"best": 156,
 "book": "Polymarket",
 "nb": 6,
 "open": 128
@@ -406,22 +406,22 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 6,
-"p1": 0.4741,
+"p1": 0.4655,
 "f1": {
 "name": "Mahammadali Osmanli",
 "slug": "mahammadali-osmanli-23274",
-"med": 104,
-"best": 110,
-"book": "FanDuel",
+"med": 105,
+"best": 122,
+"book": "Polymarket",
 "nb": 6,
 "open": 254
 },
 "f2": {
 "name": "Pavel Andrusca",
 "slug": "pavel-andrusca-20415",
-"med": -124,
-"best": -113,
-"book": "Polymarket",
+"med": -126,
+"best": -124,
+"book": "BetRivers",
 "nb": 6,
 "open": -310
 }
