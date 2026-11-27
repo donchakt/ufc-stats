@@ -1,5 +1,5 @@
 {
-"asof": "Nov 27, 2026 2:21 PM CST",
+"asof": "Nov 27, 2026 5:29 PM CST",
 "bouts": [
 {
 "mu": 45180,
@@ -55,24 +55,24 @@
 "mu": 45541,
 "event": "UFC Sydney",
 "url": "https://www.bestfightodds.com/events/ufc-sydney-4436",
-"n": 4,
+"n": 5,
 "p1": 0.2687,
 "f1": {
 "name": "Benoit Saint-Denis",
 "slug": "benoit-saint-denis-10992",
-"med": 252,
+"med": 250,
 "best": 255,
 "book": "BetRivers",
-"nb": 4,
+"nb": 5,
 "open": 169
 },
 "f2": {
 "name": "Quillan Salkilld",
 "slug": "quillan-salkilld-16405",
-"med": -339,
+"med": -345,
 "best": -280,
 "book": "FanDuel",
-"nb": 4,
+"nb": 5,
 "open": -200
 }
 },
@@ -80,15 +80,15 @@
 "mu": 45669,
 "event": "UFC Sydney",
 "url": "https://www.bestfightodds.com/events/ufc-sydney-4436",
-"n": 4,
-"p1": 0.4322,
+"n": 5,
+"p1": 0.4333,
 "f1": {
 "name": "Bogdan Guskov",
 "slug": "bogdan-guskov-16384",
-"med": 119,
+"med": 118,
 "best": 120,
 "book": "BetRivers",
-"nb": 4,
+"nb": 5,
 "open": 128
 },
 "f2": {
@@ -97,7 +97,7 @@
 "med": -150,
 "best": -138,
 "book": "BetWay",
-"nb": 4,
+"nb": 5,
 "open": -150
 }
 },
@@ -135,9 +135,9 @@
 "f1": {
 "name": "Ian Machado Garry",
 "slug": "ian-machado-garry-15690",
-"med": -182,
-"best": -170,
-"book": "Polymarket",
+"med": -184,
+"best": -178,
+"book": "FanDuel",
 "nb": 6,
 "open": -160
 },
@@ -145,7 +145,7 @@
 "name": "Yaroslav Amosov",
 "slug": "yaroslav-amosov-8304",
 "med": 148,
-"best": 163,
+"best": 170,
 "book": "Polymarket",
 "nb": 6,
 "open": 136
@@ -161,7 +161,7 @@
 "name": "Mario Pinto",
 "slug": "mario-pinto-18577",
 "med": -347,
-"best": -300,
+"best": -317,
 "book": "Polymarket",
 "nb": 6,
 "open": -286
@@ -170,7 +170,7 @@
 "name": "Serghei Spivac",
 "slug": "serghei-spivac-9985",
 "med": 258,
-"best": 285,
+"best": 300,
 "book": "Polymarket",
 "nb": 6,
 "open": 236
@@ -195,8 +195,8 @@
 "name": "Levan Chokheli",
 "slug": "levan-chokheli-11372",
 "med": 146,
-"best": 163,
-"book": "BetWay",
+"best": 156,
+"book": "Polymarket",
 "nb": 6,
 "open": 220
 }
@@ -231,11 +231,11 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 5,
-"p1": 0.4563,
+"p1": 0.4564,
 "f1": {
 "name": "Elves Brener",
 "slug": "elves-brener-16626",
-"med": 113,
+"med": 108,
 "best": 120,
 "book": "BetWay",
 "nb": 5,
@@ -245,7 +245,7 @@
 "name": "Mateusz Rebecki",
 "slug": "mateusz-rebecki-10102",
 "med": -134,
-"best": -127,
+"best": -122,
 "book": "Polymarket",
 "nb": 5,
 "open": -220
@@ -281,7 +281,7 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 5,
-"p1": 0.3922,
+"p1": 0.3963,
 "f1": {
 "name": "Ion Cutelaba",
 "slug": "ion-cutelaba-4315",
@@ -295,7 +295,7 @@
 "name": "Magomed Tuchalov",
 "slug": "magomed-tuchalov-19566",
 "med": -175,
-"best": -163,
+"best": -156,
 "book": "Polymarket",
 "nb": 5,
 "open": -194
@@ -306,13 +306,13 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 6,
-"p1": 0.4428,
+"p1": 0.4403,
 "f1": {
 "name": "Bruno Silva",
 "slug": "bruno-silva-7121",
-"med": 117,
-"best": 118,
-"book": "FanDuel",
+"med": 118,
+"best": 122,
+"book": "Polymarket",
 "nb": 6,
 "open": 128
 },
@@ -336,7 +336,7 @@
 "name": "Akbar Abdullaev",
 "slug": "akbar-abdullaev-15468",
 "med": -307,
-"best": -270,
+"best": -300,
 "book": "Polymarket",
 "nb": 6,
 "open": -260
@@ -345,7 +345,7 @@
 "name": "Mairon Santos",
 "slug": "mairon-santos-13140",
 "med": 230,
-"best": 257,
+"best": 270,
 "book": "Polymarket",
 "nb": 6,
 "open": 216
@@ -406,11 +406,11 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 6,
-"p1": 0.4741,
+"p1": 0.4649,
 "f1": {
 "name": "Mahammadali Osmanli",
 "slug": "mahammadali-osmanli-23274",
-"med": 104,
+"med": 105,
 "best": 122,
 "book": "Caesars",
 "nb": 6,
@@ -420,7 +420,7 @@
 "name": "Pavel Andrusca",
 "slug": "pavel-andrusca-20415",
 "med": -124,
-"best": -113,
+"best": -122,
 "book": "Polymarket",
 "nb": 6,
 "open": -310
@@ -449,6 +449,31 @@
 "book": "Polymarket",
 "nb": 6,
 "open": 201
+}
+},
+{
+"mu": 45938,
+"event": "UFC Vegas 125",
+"url": "https://www.bestfightodds.com/events/ufc-vegas-125-4477",
+"n": 1,
+"p1": 0.569,
+"f1": {
+"name": "Gabriel Bonfim",
+"slug": "gabriel-bonfim-11752",
+"med": -150,
+"best": -150,
+"book": "Caesars",
+"nb": 1,
+"open": -135
+},
+"f2": {
+"name": "Sean Brady",
+"slug": "sean-brady-8521",
+"med": 120,
+"best": 120,
+"book": "Caesars",
+"nb": 1,
+"open": 116
 }
 }
 ]
