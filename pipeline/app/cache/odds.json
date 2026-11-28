@@ -1,5 +1,5 @@
 {
-"asof": "Nov 27, 2026 8:11 PM CST",
+"asof": "Nov 28, 2026 1:53 AM CST",
 "bouts": [
 {
 "mu": 45180,
@@ -106,12 +106,12 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 6,
-"p1": 0.5913,
+"p1": 0.6038,
 "f1": {
 "name": "Israel Adesanya",
 "slug": "israel-adesanya-7845",
 "med": -166,
-"best": -138,
+"best": -156,
 "book": "Polymarket",
 "nb": 6,
 "open": -125
@@ -119,9 +119,9 @@
 "f2": {
 "name": "Shara Magomedov",
 "slug": "shara-magomedov-17740",
-"med": 136,
-"best": 145,
-"book": "Caesars",
+"med": 139,
+"best": 150,
+"book": "Polymarket",
 "nb": 6,
 "open": 107
 }
@@ -161,7 +161,7 @@
 "name": "Mario Pinto",
 "slug": "mario-pinto-18577",
 "med": -347,
-"best": -285,
+"best": -245,
 "book": "Polymarket",
 "nb": 6,
 "open": -286
@@ -169,7 +169,7 @@
 "f2": {
 "name": "Serghei Spivac",
 "slug": "serghei-spivac-9985",
-"med": 258,
+"med": 255,
 "best": 275,
 "book": "Caesars",
 "nb": 6,
@@ -181,7 +181,7 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 6,
-"p1": 0.6093,
+"p1": 0.6065,
 "f1": {
 "name": "Islam Dulatov",
 "slug": "islam-dulatov-14955",
@@ -195,7 +195,7 @@
 "name": "Levan Chokheli",
 "slug": "levan-chokheli-11372",
 "med": 146,
-"best": 156,
+"best": 150,
 "book": "Polymarket",
 "nb": 6,
 "open": 220
@@ -211,7 +211,7 @@
 "name": "Gabriel Santos",
 "slug": "gabriel-santos-14703",
 "med": 116,
-"best": 133,
+"best": 127,
 "book": "Polymarket",
 "nb": 6,
 "open": 157
@@ -281,12 +281,12 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 5,
-"p1": 0.3963,
+"p1": 0.3838,
 "f1": {
 "name": "Ion Cutelaba",
 "slug": "ion-cutelaba-4315",
 "med": 146,
-"best": 150,
+"best": 163,
 "book": "Polymarket",
 "nb": 5,
 "open": 164
@@ -295,7 +295,7 @@
 "name": "Magomed Tuchalov",
 "slug": "magomed-tuchalov-19566",
 "med": -175,
-"best": -156,
+"best": -170,
 "book": "Polymarket",
 "nb": 5,
 "open": -194
@@ -306,13 +306,13 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 6,
-"p1": 0.4403,
+"p1": 0.4428,
 "f1": {
 "name": "Bruno Silva",
 "slug": "bruno-silva-7121",
-"med": 118,
-"best": 122,
-"book": "Polymarket",
+"med": 114,
+"best": 118,
+"book": "FanDuel",
 "nb": 6,
 "open": 128
 },
@@ -320,7 +320,7 @@
 "name": "Jafel Filho",
 "slug": "jafel-filho-14406",
 "med": -143,
-"best": -127,
+"best": -113,
 "book": "Polymarket",
 "nb": 6,
 "open": -150
@@ -336,7 +336,7 @@
 "name": "Akbar Abdullaev",
 "slug": "akbar-abdullaev-15468",
 "med": -307,
-"best": -270,
+"best": -300,
 "book": "Polymarket",
 "nb": 6,
 "open": -260
@@ -345,7 +345,7 @@
 "name": "Mairon Santos",
 "slug": "mairon-santos-13140",
 "med": 230,
-"best": 257,
+"best": 285,
 "book": "Polymarket",
 "nb": 6,
 "open": 216
@@ -361,7 +361,7 @@
 "name": "Ivan Gnizditskiy",
 "slug": "ivan-gnizditskiy-23273",
 "med": 102,
-"best": 104,
+"best": 122,
 "book": "Polymarket",
 "nb": 5,
 "open": -150
@@ -370,8 +370,8 @@
 "name": "Uran Satybaldiev",
 "slug": "uran-satybaldiev-16347",
 "med": -127,
-"best": -108,
-"book": "Polymarket",
+"best": -125,
+"book": "BetWay",
 "nb": 5,
 "open": 128
 }
@@ -386,7 +386,7 @@
 "name": "Junyong Park",
 "slug": "junyong-park-20122",
 "med": 141,
-"best": 170,
+"best": 156,
 "book": "Polymarket",
 "nb": 6,
 "open": 157
@@ -394,9 +394,9 @@
 "f2": {
 "name": "Marco Tulio",
 "slug": "marco-tulio-18271",
-"med": -179,
-"best": -175,
-"book": "BetRivers",
+"med": -177,
+"best": -170,
+"book": "Polymarket",
 "nb": 6,
 "open": -185
 }
@@ -431,13 +431,13 @@
 "event": "UFC Saudi Arabia",
 "url": "https://www.bestfightodds.com/events/ufc-saudi-arabia-4453",
 "n": 6,
-"p1": 0.5614,
+"p1": 0.5597,
 "f1": {
 "name": "Matthieu Duclos",
 "slug": "matthieu-duclos-13753",
 "med": -143,
-"best": -135,
-"book": "Caesars",
+"best": -133,
+"book": "Polymarket",
 "nb": 6,
 "open": -240
 },
@@ -445,7 +445,7 @@
 "name": "Modestino Rodrigues",
 "slug": "modestino-rodrigues-23275",
 "med": 116,
-"best": 133,
+"best": 122,
 "book": "Polymarket",
 "nb": 6,
 "open": 201
